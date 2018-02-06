@@ -1,17 +1,30 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage[hmargin=2.5cm, vmargin=2.5cm]{geometry}
+\usepackage[hmargin=3cm, vmargin=3cm]{geometry}
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{enumitem}
-\usepackage{sectsty}
 
-\sectionfont{\fontsize{12}{15}\selectfont}
+% Define counter and exercise titles
+\newcounter{exercise}
+\newcommand{\exercise}{
+    \stepcounter{exercise}
+    \theexercise )
+}
+\newcommand{\exercicetitle}[1]{
+    \noindent{
+        \exercise \textbf{#1}
+        \vspace{0.5em}
+    }
+}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+
 
 \begin{center}
     \textbf{\large
@@ -21,8 +34,20 @@
 \end{center}
 
 
+\exercise Suponiendo que la entropía $S$ y la cantidad de microestados 
+$\Omega$ de un sistema físico están relacionadas por una función 
+arbitraria $f$ tal que:
 
-\section{Sólido de Einstein}
+$$ S = f(\Omega), $$
+
+\noindent demuestre que el caracter extensivo de $S$ y el multiplicativo de 
+$\Omega$ necesariamente requieren que $f$ sea de la forma:
+
+$$ S = k \ln \Omega $$
+
+
+
+\exercicetitle{Sólido de Einstein}
 
 Uno de los primeros modelos que se propusieron para describir las vibraciones 
 de un sólido cristalino es el de Einstein. El mismo considera cada uno de los 
