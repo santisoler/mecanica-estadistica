@@ -1,0 +1,60 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[hmargin=2.5cm, vmargin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{sectsty}
+
+\sectionfont{\fontsize{12}{15}\selectfont}
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\large
+        Mecánica Estadística \\
+        Práctica 1 - Colectivo Microcanónico
+    }
+\end{center}
+
+
+
+\section{Sólido de Einstein}
+
+Uno de los primeros modelos que se propusieron para describir las vibraciones 
+de un sólido cristalino es el de Einstein. El mismo considera cada uno de los 
+$N$ átomos del sólido vibrando alrededor de su posición de equilibrio y de 
+manera independiente. Además, presupone que todos los átomos oscilan con la 
+misma frecuencia $\omega$. Si consideramos a cada átomo como un oscilado 
+harmónico cuántico, cada uno posee niveles de energía discretos ($n = 1, 2, 3, 
+\dots$) y por ende, la energía total del sistema ($E$) puede 
+distribuirse entre los distintos osciladores en $E/\hbar\omega$ 
+cuantos de energía.
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Calcular la cantidad de microestados $\Omega(E, N, V)$:\\
+          $$\Omega(E, N, V) =
+          \frac{(3N - 1 + E/\hbar\omega)!}{(3N - 1)! \, (E/\hbar\omega)!}$$
+          }
+
+    \item{Obtener una expresión para la energía total $E$ en función 
+          de la temperatura y analizar los límites a la temperatura del 
+          cero absoluto y a temperaturas altas ($T \rightarrow \infty$).
+          }
+
+    \item{Calcular el calor específico del sólido de Einstein.
+          Analizar los casos de $T=0$ y $T \rightarrow \infty$.
+          Realizar una gráfica del $C_v$ en función de $T$
+          (utilizar Software como wxMaxima).
+          }
+\end{enumerate}
+
+
+\end{document}
+
