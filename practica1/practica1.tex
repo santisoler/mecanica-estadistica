@@ -9,13 +9,11 @@
 
 % Define counter and exercise titles
 \newcounter{exercise}
-\newcommand{\exercise}{
+\newcommand{\exercisetitle}[1]{
     \stepcounter{exercise}
-    \theexercise )
-}
-\newcommand{\exercicetitle}[1]{
+    \vspace{0.5em}
     \noindent{
-        \exercise \textbf{#1}
+        \textbf{Problema \theexercise . #1}
         \vspace{0.5em}
     }
 }
@@ -25,7 +23,6 @@
 
 \begin{document}
 
-
 \begin{center}
     \textbf{\large
         Mecánica Estadística \\
@@ -34,7 +31,9 @@
 \end{center}
 
 
-\exercise Suponiendo que la entropía $S$ y la cantidad de microestados 
+\exercisetitle{}
+
+ Suponiendo que la entropía $S$ y la cantidad de microestados 
 $\Omega$ de un sistema físico están relacionadas por una función 
 arbitraria $f$ tal que:
 
@@ -47,7 +46,7 @@ $$ S = k \ln \Omega $$
 
 
 
-\exercicetitle{Sólido de Einstein}
+\exercisetitle{Sólido de Einstein}
 
 Uno de los primeros modelos que se propusieron para describir las vibraciones 
 de un sólido cristalino es el de Einstein. El mismo considera cada uno de los 
