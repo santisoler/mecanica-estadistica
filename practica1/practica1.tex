@@ -11,7 +11,7 @@
 \newcounter{exercise}
 \newcommand{\exercisetitle}[1]{
     \stepcounter{exercise}
-    \vspace{0.5em}
+    \vspace{1em}
     \noindent{
         \textbf{Problema \theexercise . #1}
         \vspace{0.5em}
@@ -36,13 +36,23 @@
  Suponiendo que la entropía $S$ y la cantidad de microestados 
 $\Omega$ de un sistema físico están relacionadas por una función 
 arbitraria $f$ tal que:
-
+~
 $$ S = f(\Omega), $$
-
+~
 \noindent demuestre que el caracter extensivo de $S$ y el multiplicativo de 
 $\Omega$ necesariamente requieren que $f$ sea de la forma:
 
 $$ S = k \ln \Omega $$
+
+
+
+\exercisetitle{Aproximación de Stirling}
+
+Mostrar que $\ln N! = \sum_{n=0}^N \ln n$.
+Aproximando esta suma por una integral, obtener la aproximación de 
+stirling:
+~
+$$ \ln N! \simeq N \ln N - N $$
 
 
 
