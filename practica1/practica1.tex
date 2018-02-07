@@ -56,6 +56,79 @@ $$ \ln N! \simeq N \ln N - N $$
 
 
 
+\exercisetitle{Paramagneto}
+
+Una sustancia paramagnética es aquella que presenta magnetización 
+$\mathbf{M}$ nula frente a un campo magnético externo $\mathbf{H}$ 
+nulo.
+Si por el contrario, el campo no es nulo, el paramagneto se 
+imanta en la misma dirección. Se pueden considerar dos calses de 
+paramagnetismo: de \emph{Langevin} o de \emph{Pauli}.
+El segundo se debe al gas de electrones libres de un metal, mientras 
+que el primero se origina en la interacción de los momentos magnéticos 
+intrínsecos de los átomos del sólido con el campo magnético externo.
+En este problema analizaremos un caso sencillo del magnetismo de 
+Langevin.
+
+Supongamos un paramagneto inmerso en un campo magnético $H$ 
+orientado en la dirección del eje $z$.
+Consideremos que el paramagneto está compuesto por $N$ momentos 
+magnéticos individuales (y no interactuantes entre sí) de manera tal 
+que la proyección de cada momento magnético en el eje $z$ 
+puede ser $\pm \mu_B$ ($\mu_B = e\hbar / 2m_e c = 9.273 \times 
+10^{-24}$ se conoce como el magnetón de Bohr).
+La magnetización total del sistema estará dada por $M = m \mu_B$, donde 
+$N/2 + m/2$ y $N/2 - m/2$ son las cantidades de momentos magnéticos que 
+apuntan hacia arriba y hacia abajo, respectivamente.
+Vamos a considerar también que el sistema ``paramagneto + campo 
+magnético'' es un sistema aislado, es decir, $E = - 
+\mathbf{M}\cdot\mathbf{H} = \text{cte}$.
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Encontrar una expresión analítica para el número de 
+          estados microscópicos $\Omega(N, m)$ correspondientes a una 
+          magnetización total M.
+          }
+    
+    \item{\label{item:paramagneto-magnetizacion}
+          Usando la relación
+          $\frac{1}{T} = \left( \frac{\partial S}{\partial E} \right)_V$,
+          hallar la ecuación de estado de los paramagnetos:
+          $$ M = N \mu_B \tanh \left( \frac{\mu_B H}{k_B T} \right) $$.
+          }
+    
+    \item{\label{item:paramagneto-grafica}
+          Realizar una gráfica de $M$ vs $\mu_B H/k_B T$.
+          ¿Qué sucede con la magnetización a altas temperaturas?
+          ¿Qué sucede con la magnetización a bajas temperaturas?
+          }
+    
+    {\small
+    \textbf{Ayuda:} Cuando hablamos de bajas temperaturas nos referimos 
+    a que $k_B T \ll \mu_B H$, mientras que altas temperaturas 
+    significa que $k_B T \gg \mu_B H$.
+    }
+
+    \item{La Ley de Curie (obtenida experimentalmente) establece que la 
+          magnetización de un paramagneto es directamente proporcional 
+          al campo magnético externo e inversamente proporcional a la 
+          temperatura:
+          $$ M \propto \frac{H}{T} $$
+          Determinar el rango de validez de la Ley de Curie a partir de la
+          gráfica realizada en \ref{item:paramagneto-grafica}
+          (¿altas o bajas temperaturas?).\\
+          Obtener la Ley de Curie a partir de un desarrollo en series 
+          de Taylor de la magnetización obtenida en 
+          \ref{item:paramagneto-magnetizacion}.
+          }
+
+\end{enumerate}
+
+
+
 \exercisetitle{Sólido de Einstein}
 
 Uno de los primeros modelos que se propusieron para describir las vibraciones 
