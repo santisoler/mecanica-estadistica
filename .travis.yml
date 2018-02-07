@@ -5,6 +5,7 @@ script:
 - mkdir _build
 - cd practica1
 - pdflatex -output-directory ../_build practica1.tex
+- pdflatex -output-directory ../_build practica1.tex
 - cd ..
 
 deploy:
