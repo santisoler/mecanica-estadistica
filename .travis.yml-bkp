@@ -1,0 +1,19 @@
+before_install:
+- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-latex-base texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-lang-spanish dvipng"
+
+script:
+- mkdir _build
+- cd practica1
+- pdflatex -output-directory ../_build practica1.tex
+- cd ..
+
+deploy:
+  provider: releases
+  api_key:
+    secure: PiYBrPqMo44maXsObtabRgnZG2870hxl09HwYeKHS3bmxxJSXOLFuIlbzmZZCdVy3iPIwJmdq8s72eHQNpUUdD05qFeR1F9ngcTuNkOiZ1c9L3bkOzm4ovuPzClK8clPuER+CfnRZaubi3GSf7Is6c1Jjaxft5O49NRi8UDvAwfkC56M8NM4hslV+7gJYZvDMXYj6/Qjd0NSokMu6kWTw5XT5efOoGkhQ7OgY3BUJouLuFHJAD8HG7LwNzKU1Jh5+lhIpCbp/RcT3w5SIRGa10GEB8SD0HSHELcCxfW8KUeP/KxFpcFlZE5BQi0nkgSD/t86iI+xG/rmFnmyKFYcPhhz4HcRy31qqx3Nqy7NpMG5Hq+CCMbl4zOWQ8mEuZAMn0btVLWazGzJ7xMjcowbrSqSA/6L41bPJgh6YCYrY94OfcH+lJOPZc7ME5TUWNAc31aMVoN2zneYcKWouLVVC3NqBf3AP6XBEqmeqwKf2EjPLsw290V3pfgmm8BiRacvqpRdHqAMa4VdkMYEVPG+w89c+Z25DgdI7pk2A5rpoauheGgNAJhXZL87hCR89h2hPNxGDHciGC/N02c7C0OQ3o+kokBqqFTmsJsorxShL18EbyXituHkTV7h4MHxKkq0gKAAgXWOZFK9yXGos5hL22Ue0RlmKaJYQwpL5Wj4c70=
+  file:
+    - _build/practica1.pdf
+  skip_cleanup: true
+  on:
+    repo: santis19/mecanica-estadistica
+
