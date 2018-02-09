@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{enumitem}
+\usepackage{subcaption}
 
 % Define counter and exercise titles
 \newcounter{exercise}
@@ -43,7 +44,7 @@ $$ S = f(\Omega), $$
 $\Omega$ necesariamente requieren que $f$ sea de la forma:
 ~
 $$ S = k \ln \Omega $$
-~
+
 
 
 \exercisetitle{Aproximación de Stirling}
@@ -53,6 +54,125 @@ Aproximando esta suma por una integral, obtener la aproximación de
 stirling:
 ~
 $$ \ln N! \simeq N \ln N - N $$
+
+
+
+\exercisetitle{Defectos de Schottky}
+
+Los átomos que conforman un sólido cristalino se encuentran 
+dispuestos en los vértices de una red regular (conocida como red 
+cristalina) de manera compacta (Fig. \ref{fig:nacl}).
+Sin embargo, a temperaturas distintas de cero, las redes cristalinas 
+puede presentar defectos que rompen esa regularidad, los cuales se 
+clasifican según su geometría: defectos puntuales, lineales o 
+tridimensionales.
+
+Dentro de los defectos puntuales podemos hallar las \emph{vacantes de 
+Schottky}, las cuales consisten en que algunos átomos abandonen su 
+posición en la red (dejando una vacante o vacío en su lugar) y migren 
+hacia la superficie (Fig. \ref{fig:schottky}); y los \emph{intersticios 
+de Frenkel}, en cuyo caso los átomos migran a posiciones intersticiales 
+de la red (Fig. \ref{fig:frenkel}).
+
+
+\vspace{1em}
+\textbf{Vacantes de Schottky}
+\vspace{0.5em}
+
+Consideremos un cristal aislado ($E = $ cte) compuesto por $N$ átomos 
+que presenta $n$ vacantes de Schottky.
+Si suponemos que cada defecto conlleva un coste energético $\epsilon$:
+
+
+\begin{figure}[b]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{figs/NaCl.png}
+        \caption{Red Cristalina de NaCl}
+        \label{fig:nacl}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{figs/schottky.png}
+        \caption{Vacantes de Schottky}
+        \label{fig:schottky}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.27\textwidth}
+        \includegraphics[width=\textwidth]{figs/frenkel.png}
+        \caption{Intersticios de Frenkel}
+        \label{fig:frenkel}
+    \end{subfigure}
+    \caption{Redes cristalinas y defectos puntuales}
+\end{figure}
+
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{\label{item:schottky-microestados}
+          Calcular la cantidad de microestados $\Omega(E, N)$ en 
+          función de la cantidad de defectos $n$.
+          }
+
+    \item{\label{item:schottky-entropia}
+          Determinar la entropía del cristal.}
+    
+    \item{\label{item:schottky-defectos}
+          Obtener una expresión para la cantidad de defectos en 
+          función de la temperatura del cristal.
+          Si $\epsilon = 1 \text{eV}$ y la temperatura del cristal es
+          $T = 300 \text{K}$, calcular la fracción de defectos 
+          puntuales.
+          }
+
+    {\small
+    \textbf{Dato:}
+    Un electronvoltio (eV) es una unidad de energía que equivale a 
+    $1.602176565 \cdot 10^{-19}$ J.
+    }
+    
+    \item{\label{item:schottky-cv}
+          Calcular el calor específico del cristal y sus límites
+          a $T = 0 \text{K}$ y $T \rightarrow \infty$.
+          Realizar una gráfica del mismo.
+          ¿A qué se debe el pico que presenta el calor específico?
+          }
+
+    \item{Si suponemos que $\epsilon = 1eV$ y la temperatura de fusión 
+          del sólido es $\sim 10^3 \text{K}$, ¿es posible observar 
+          el comportamiento del calor específico obtenido en 
+          \ref{item:schottky-cv} de manera experimental? Justifique.
+          }
+
+\end{enumerate}
+
+
+\vspace{1em}
+\textbf{Intersticios de Frenkel}
+\vspace{0.5em}
+
+Responder los puntos \ref{item:schottky-microestados}, 
+\ref{item:schottky-entropia} y \ref{item:schottky-defectos} del 
+ejercicio anterior considerando el mismo cristal, pero que ahora 
+presenta $n$ átomos situados en sitios intersticiales (solo defectos de 
+Frenkel).
+
+\vspace{0.5em}
+{\small
+\textbf{Ayuda:} Considere la red del cristal y una red dual (de 
+instersticios) a la cual van a parar los átomos que migran. Es válido 
+suponer que ambas redes poseen la misma cantidad de sitios.
+}
+
+%~ Teniendo en cuenta que los átomos localizados en los vertices de la 
+%~ red cristalina minimiza la energía del sistema, ¿cómo puede 
+%~ interpretar el hecho de que la red presente defectos puntuales a 
+%~ temperatura distinta de cero si cada defecto puntual implica un 
+%~ costo energético?
+
+
 
 
 
@@ -126,7 +246,7 @@ magnético'' es un sistema aislado, es decir, $E = -
           }
     
     \item{Si consideramos un paramagneto compuesto por $N = 10^{24}$ 
-          momentos magnéticos a $T = 300 \rm{^\circ K}$ y sometido a un 
+          momentos magnéticos a $T = 300 \text{K}$ y sometido a un 
           campo magnético externo $H = 10^{-3} T$,
           ¿cuál es la energía necesaria para invertir totalmente la 
           magnetización $M$?
