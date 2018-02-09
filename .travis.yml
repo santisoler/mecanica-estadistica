@@ -16,4 +16,4 @@ deploy:
     - _build/practica1.pdf
   skip_cleanup: true
   on:
-    repo: santis19/mecanica-estadistica
+    tags: true
