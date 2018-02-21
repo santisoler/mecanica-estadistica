@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="paradoja-gibbs.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="295.52042"
+     inkscape:cy="705.47207"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1360"
+     inkscape:window-height="711"
+     inkscape:window-x="0"
+     inkscape:window-y="29"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#222222;stroke-width:1.03668177;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4485"
+       width="68.963318"
+       height="38.963318"
+       x="13.436494"
+       y="76.211792"
+       inkscape:export-xdpi="299.72003"
+       inkscape:export-ydpi="299.72003" />
+    <rect
+       y="78.660591"
+       x="15.885297"
+       height="34.065716"
+       width="64.065712"
+       id="rect4489"
+       style="fill:none;fill-opacity:1;stroke:#222222;stroke-width:0.93428636;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="299.72003"
+       inkscape:export-ydpi="299.72003" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:1.5,1.5;stroke-dashoffset:0"
+       d="M 48.002975,78.907737 V 112.35863"
+       id="path4491"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="299.72003"
+       inkscape:export-ydpi="299.72003" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4493"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-8.6934524,-57.452381)"
+       inkscape:export-xdpi="299.72003"
+       inkscape:export-ydpi="299.72003"><flowRegion
+         id="flowRegion4495"><rect
+           id="rect4497"
+           width="174.28572"
+           height="58.57143"
+           x="104.28571"
+           y="507.51968" /></flowRegion><flowPara
+         id="flowPara4499"
+         style="font-size:20px">N<flowSpan
+   style="font-size:64.99999762%;baseline-shift:sub"
+   id="flowSpan4541">A</flowSpan>, V<flowSpan
+   style="font-size:64.99999762%;baseline-shift:sub"
+   id="flowSpan4539">A</flowSpan></flowPara></flowRoot>    <flowRoot
+       transform="matrix(0.26458333,0,0,0.26458333,26.080357,-57.452381)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot4533"
+       xml:space="preserve"
+       inkscape:export-xdpi="299.72003"
+       inkscape:export-ydpi="299.72003"><flowRegion
+         id="flowRegion4525"><rect
+           y="507.51968"
+           x="104.28571"
+           height="58.57143"
+           width="174.28572"
+           id="rect4523" /></flowRegion><flowPara
+         style="font-size:20px"
+         id="flowPara4531">N<flowSpan
+   style="font-size:64.99999762%;baseline-shift:sub"
+   id="flowSpan4535">B</flowSpan>, V<flowSpan
+   style="font-size:64.99999762%;baseline-shift:sub"
+   id="flowSpan4537">B</flowSpan></flowPara></flowRoot>    <rect
+       y="76.211792"
+       x="108.68648"
+       height="38.963318"
+       width="68.963318"
+       id="rect4543"
+       style="fill:none;fill-opacity:1;stroke:#222222;stroke-width:1.03668177;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#222222;stroke-width:0.93428636;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4545"
+       width="64.065712"
+       height="34.065716"
+       x="111.13529"
+       y="78.660591"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       transform="matrix(0.26458333,0,0,0.26458333,86.556552,-57.452381)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot4559"
+       xml:space="preserve"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4551"><rect
+           y="507.51968"
+           x="104.28571"
+           height="58.57143"
+           width="174.28572"
+           id="rect4549" /></flowRegion><flowPara
+         style="font-size:20px"
+         id="flowPara4575">N = N<flowSpan
+   id="flowSpan4553"
+   style="font-size:64.99999762%;baseline-shift:sub">A</flowSpan> + N<flowSpan
+   style="font-size:64.99999762%;baseline-shift:sub"
+   id="flowSpan4573">B</flowSpan></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4594"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,87.034559,-49.968834)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4586"><rect
+           id="rect4584"
+           width="174.28572"
+           height="58.57143"
+           x="104.28571"
+           y="507.51968" /></flowRegion><flowPara
+         id="flowPara4592"
+         style="font-size:20px">V = V<flowSpan
+   style="font-size:64.99999762%;baseline-shift:sub"
+   id="flowSpan4588">A</flowSpan> + V<flowSpan
+   id="flowSpan4590"
+   style="font-size:64.99999762%;baseline-shift:sub">B</flowSpan></flowPara></flowRoot>  </g>
+</svg>
