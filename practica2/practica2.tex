@@ -8,17 +8,11 @@
 \usepackage{enumitem}
 \usepackage{subcaption}
 \usepackage{fancyhdr}
+\usepackage{titlesec}
 
-% Define counter and exercise titles
-\newcounter{exercise}
-\newcommand{\exercisetitle}[1]{
-    \stepcounter{exercise}
-    \vspace{1.5em}
-    \noindent{
-        \textbf{Problema \theexercise . #1}
-        \vspace{0.5em}
-    }
-}
+
+\titleformat{\section}
+  {\bf}{Problema \thesection.}{0.5em}{}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -52,7 +46,7 @@
 % Excersises
 % ----------
 
-\exercisetitle{Gas ideal clásico}
+\section{Gas Ideal Clásico}
 
 La forma más sencilla de modelizar un gas real es el \emph{gas ideal 
 clásico}, el cual consiste en considerar un conjunto de $N$ partículas 
@@ -108,7 +102,7 @@ aislado.
 \end{enumerate}
 
 
-\exercisetitle{Longitud de onda de de Broglie}
+\section{Longitud de onda de de Broglie}
 
 Consideremos el gas ideal clásico del Problema 1 y repensemos el 
 modelo de partículas clásicas no interactuantes. Para que esta 
@@ -164,7 +158,7 @@ $\{ q_1, \dots q_N, p_1, \dots p_N \}$, es decir, $h^{3N}$.
 \end{enumerate}
 
 
-\exercisetitle{Paradoja de Gibbs}
+\section{Paradoja de Gibbs}
 
 En el Problema 1 hemos analizado cómo la corrección $1/N!$ permite 
 que los potenciales termodinámicos sean extensivos. En este problema 
@@ -227,7 +221,7 @@ A partir de un análisis puramente termodinámico podemos afirmar que:
 \end{enumerate}
 
 
-\exercisetitle{Gas ideal clásico: niveles de energía discretos}
+\section{Gas ideal clásico: niveles de energía discretos}
 
 En los problemas anteriores hemos observado que un desarrollo mecánico 
 estadístico de gases ideales puramente clásicos posee problemas 
