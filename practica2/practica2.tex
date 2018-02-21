@@ -107,5 +107,62 @@ aislado.
 
 \end{enumerate}
 
+
+\exercisetitle{Longitud de onda de de Broglie}
+
+Consideremos el gas ideal clásico del Problema 1 y repensemos el 
+modelo de partículas clásicas no interactuantes. Para que esta 
+simplificación sea válida es necesario basarnos en la hipótesis de 
+que las partículas del gas se encuentran a una distancia 
+suficientemente grande en la que las funciones de onda de 
+cada una no se superpone con las del resto, es decir, a una distancia 
+en la cual podemos obviar la coherencia cuántica.
+
+Al calcular la función de partición hemos integrado el factor 
+$e^{-\beta E}$ en el espacio de las fases. Sin embargo no hemos tenido 
+en cuenta un concepto de la mecánica cuántica: el principio de 
+incertidumbre de Heisenberg. El mismo dicta que nos es imposible medir 
+con precisión ciertos pares de magnitudes físicas de un sistema 
+cuántico, por ejemplo, la posición y el momento. Este principio se 
+puede resumir en:
+$$ \Delta x \Delta p \gtrsim  h$$
+donde $\Delta x$ y $\Delta p$ son las incertidumbres en la medición de 
+la posición y el momento de una particula, respectivamente; y $h$ es 
+la constante de Planck.
+De esta manera, podríamos pensar que a la hora de integrar en las 
+coordenadas del espacio de las fases es necesario dividir por el 
+``mínimo volumen'' que puede ocupar cada microestado 
+$\{ q_1, \dots q_N, p_1, \dots p_N \}$, es decir, $h^{3N}$.
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+      
+    \item{Obtener la función de partición a partir de la siguiente 
+          integral:
+          $$
+          Z(N, T, V) =
+            \frac{1}{h^{3N} N!}
+            \int_D e^{-\beta E(\{q, p\})} d^{3N}q \,\, d^{3N}p
+          $$
+          }
+
+    \item{Definimos a la longitud de onda térmica de de Broglie como:
+          $$ \lambda = \left( \frac{h^2}{2\pi m k_B T} \right)^{1/2} $$
+          Expresar la función de partición obtenida en el punto 
+          anterior en función de $\lambda$.
+          }
+
+    \item{La longitud de onda de de Broglie se puede considerar como la 
+          longitud característica a partir de la cual la coherencia 
+          cuántica comienza a tener relevancia.\\
+          Obtener una expresión para la distancia media de las 
+          partículas ($l$). ¿Cómo deberíamos considerar a las 
+          partículas si $\lambda/l \ll 1$? ¿y en el caso contrario?
+          }
+          
+\end{enumerate}
+
+
 \end{document}
 
