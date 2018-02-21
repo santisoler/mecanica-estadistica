@@ -8,17 +8,11 @@
 \usepackage{enumitem}
 \usepackage{subcaption}
 \usepackage{fancyhdr}
+\usepackage{titlesec}
 
-% Define counter and exercise titles
-\newcounter{exercise}
-\newcommand{\exercisetitle}[1]{
-    \stepcounter{exercise}
-    \vspace{1.5em}
-    \noindent{
-        \textbf{Problema \theexercise . #1}
-        \vspace{0.5em}
-    }
-}
+
+\titleformat{\section}
+  {\bf}{Problema \thesection.}{0.5em}{}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -51,7 +45,7 @@
 
 % Excersises
 % ----------
-\exercisetitle{}
+\section{}
 
  Suponiendo que la entropía $S$ y la cantidad de microestados 
 $\Omega$ de un sistema físico están relacionadas por una función 
@@ -66,7 +60,7 @@ $$ S = k \ln \Omega $$
 
 
 
-\exercisetitle{Aproximación de Stirling}
+\section{Aproximación de Stirling}
 
 Mostrar que $\ln N! = \sum_{n=0}^N \ln n$.
 Aproximando esta suma por una integral, obtener la aproximación de 
@@ -76,7 +70,7 @@ $$ \ln N! \simeq N \ln N - N $$
 
 
 
-\exercisetitle{Defectos Puntuales en Redes Cristalinas}
+\section{Defectos Puntuales en Redes Cristalinas}
 
 Los átomos que conforman un sólido cristalino se encuentran 
 dispuestos en los vértices de una red regular (conocida como red 
@@ -185,7 +179,7 @@ suponer que ambas redes poseen la misma cantidad de sitios.
 
 
 
-\exercisetitle{Paramagneto}
+\section{Paramagneto}
 
 Una sustancia paramagnética es aquella que presenta magnetización 
 $\mathbf{M}$ nula frente a un campo magnético externo $\mathbf{H}$ 
@@ -270,7 +264,7 @@ magnético'' es un sistema aislado, es decir, $E = -
 
 
 
-\exercisetitle{Sólido de Einstein}
+\section{Sólido de Einstein}
 
 Uno de los primeros modelos que se propusieron para describir las vibraciones 
 de un sólido cristalino es el de Einstein. El mismo considera cada uno de los 
