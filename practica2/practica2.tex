@@ -291,5 +291,57 @@ donde $Z_1$ es la función de partición de una sola partícula.
 \end{enumerate}
 
 
+\section{Paramagnetismo de Langevin clásico}
+
+Como hemos visto en la práctica anterior, un paramagneto puede ser 
+modelado como un conjunto de $N$ momentos magnéticos situados en los 
+nodos de una red cristalina, los cuales interactúan únicamente por el campo 
+magnético externo $\textbf{H}$ (y no entre ellos).
+
+En este problema realizaremos un desarrollo puramente clásico del 
+paramagneto, considerando que cada momento magnético es un vector de 
+módulo $\mu$ que puede orientarse en cualquier dirección dada por los 
+ángulos polar y azimutal $\theta$ y $\phi$, respectivamente.
+Si el campo externo $\textbf{H}$ está orientado en la dirección del eje 
+$z$, entonces la energía de cada momento magnético viene dada por:
+
+$$ E = - \boldsymbol{\mu} \cdot \textbf{H} = - \mu H \cos \theta $$
+
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Obtener la función de partición de todo el paramagneto.}
+    
+    \item{Si definimos como $M$ a la proyección de la magnetización total del 
+          sistema en el eje $z$, demostrar que:
+          $$ M(N, H, T) = - \left( \frac{\partial F}{\partial H} 
+          \right)_{N, T}$$
+          }
+    
+    {\small
+    \textbf{Ayuda:}
+    Partir de la definición de la energía libre de Helmholtz ($ dF = dU 
+    - S dT$) y utilizar la expresión de la energía total del sistema 
+    ($ E = - \textbf{M} \cdot \textbf{H} \simeq - MH$).
+    }
+    
+    \item{Obtener una expresión para la magnetización $M$ en función 
+          de la temperatura $T$ y calcular la susceptibilidad magnética 
+          $\chi = \left( \frac{\partial M}{\partial H} \right)_{N, T}$.}
+    
+    \item{Verificar si la magnetización $M$ responde a la Ley de Curie 
+          para altas temperaturas.}
+    
+    \item{Calcular el calor específico del paramagneto y analizar sus 
+          comportamientos a altas y bajas temperaturas. ¿Este 
+          resultado satisface el Tercer Principio de la Termodinámica?}
+
+
+\end{enumerate}
+
+\section{Paramagnetismo de Langevin cuántico}
+
 \end{document}
 
