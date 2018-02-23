@@ -46,7 +46,7 @@
 % Excersises
 % ----------
 
-\section{Gas Ideal Clásico}
+\section{Gas ideal clásico}
 \label{sec:gas-ideal}
 
 La forma más sencilla de modelizar un gas real es el \emph{gas ideal 
@@ -104,6 +104,7 @@ aislado.
 
 
 \section{Longitud de onda de de Broglie}
+\label{sec:de-broglie}
 
 Consideremos el gas ideal clásico del Problema \ref{sec:gas-ideal} y 
 repensemos el modelo de partículas clásicas no interactuantes. Para que esta 
@@ -133,7 +134,8 @@ $\{ q_1, \dots q_N, p_1, \dots p_N \}$, es decir, $h^{3N}$.
                   leftmargin=2\parindent,
                   rightmargin=2\parindent]
       
-    \item{Obtener la función de partición a partir de la siguiente 
+    \item{\label{item:de-broglie-particion}
+          Obtener la función de partición a partir de la siguiente 
           integral:
           $$
           Z(N, T, V) =
@@ -222,7 +224,7 @@ A partir de un análisis puramente termodinámico podemos afirmar que:
 \end{enumerate}
 
 
-\section{Gas ideal clásico: niveles de energía discretos}
+\section{Gas ideal clásico: Pozo de potencial infinito}
 
 En los problemas anteriores hemos observado que un desarrollo mecánico 
 estadístico de gases ideales puramente clásicos posee problemas 
@@ -269,11 +271,22 @@ donde $Z_1$ es la función de partición de una sola partícula.
     discreta de los estados en una integral del tipo:
     $$ Z_1(T, V) =
     \int_0^\infty g(\epsilon) e^{-\epsilon/k_B T} d\epsilon $$
-    donde $g(e)$ es la densidad de estados y puede calcularse como:
-    $$ g(\epsilon) = \frac{d N(\epsilon)}{d\epsilon} $$
+    donde $g(e)$ es la densidad de estados, es decir la cantidad de 
+    estados con energía entre $\epsilon$ y $\epsilon + d\epsilon$:
+    $$ g(\epsilon) d\epsilon = N(\epsilon + d\epsilon) - N(\epsilon)
+    \quad \Rightarrow \quad g(\epsilon) = \frac{d N(\epsilon)}{d\epsilon} $$
     donde $N(\epsilon)$ es la cantidad de estados con energía menor o 
     igual a $\epsilon$.
     }
+
+    \item{Comparar la función de partición obtenida en el punto 
+          anterior con la que hemos obtenido en el problema 
+          \ref{sec:de-broglie}\ref{item:de-broglie-particion}.
+          Analizar cómo fueron introducidas las constantes de Planck 
+          en ambos casos. ¿A qué conclusión podemos arribar acerca 
+          de los gases ideales y un modelado puramente clásico de los 
+          mismos?
+          }
 
 \end{enumerate}
 
