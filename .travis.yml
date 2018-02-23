@@ -7,6 +7,10 @@ script:
 - make
 - mv output/*.pdf ../_build
 - cd ..
+- cd practica2
+- make
+- mv output/*.pdf ../_build
+- cd ..
 
 deploy:
   provider: releases
