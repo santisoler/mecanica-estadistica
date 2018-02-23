@@ -271,7 +271,7 @@ donde $Z_1$ es la función de partición de una sola partícula.
     discreta de los estados en una integral del tipo:
     $$ Z_1(T, V) =
     \int_0^\infty g(\epsilon) e^{-\epsilon/k_B T} d\epsilon $$
-    donde $g(e)$ es la densidad de estados, es decir la cantidad de 
+    donde $g(\epsilon)$ es la densidad de estados, es decir la cantidad de 
     estados con energía entre $\epsilon$ y $\epsilon + d\epsilon$:
     $$ g(\epsilon) d\epsilon = N(\epsilon + d\epsilon) - N(\epsilon)
     \quad \Rightarrow \quad g(\epsilon) = \frac{d N(\epsilon)}{d\epsilon} $$
@@ -292,6 +292,7 @@ donde $Z_1$ es la función de partición de una sola partícula.
 
 
 \section{Paramagnetismo de Langevin clásico}
+\label{sec:paramagneto-clasico}
 
 Como hemos visto en la práctica anterior, un paramagneto puede ser 
 modelado como un conjunto de $N$ momentos magnéticos situados en los 
@@ -305,14 +306,14 @@ módulo $\mu$ que puede orientarse en cualquier dirección dada por los
 Si el campo externo $\textbf{H}$ está orientado en la dirección del eje 
 $z$, entonces la energía de cada momento magnético viene dada por:
 
-$$ E = - \boldsymbol{\mu} \cdot \textbf{H} = - \mu H \cos \theta $$
+$$ E_i = - \boldsymbol{\mu_i} \cdot \textbf{H} = - \mu H \cos \theta_i $$
 
 
 \begin{enumerate}[label=(\alph*),
                   leftmargin=2\parindent,
                   rightmargin=2\parindent]
 
-    \item{Obtener la función de partición de todo el paramagneto.}
+    \item{Obtener la función de partición del paramagneto.}
     
     \item{Si definimos como $M$ a la proyección de la magnetización total del 
           sistema en el eje $z$, demostrar que:
@@ -323,20 +324,27 @@ $$ E = - \boldsymbol{\mu} \cdot \textbf{H} = - \mu H \cos \theta $$
     {\small
     \textbf{Ayuda:}
     Partir de la definición de la energía libre de Helmholtz ($ dF = dU 
-    - S dT$) y utilizar la expresión de la energía total del sistema 
-    ($ E = - \textbf{M} \cdot \textbf{H} \simeq - MH$).
+    - S dT$) y utilizar la expresión de la energía total del 
+    paramagneto ($ E = - \textbf{M} \cdot \textbf{H} \simeq - MH$).
     }
     
     \item{Obtener una expresión para la magnetización $M$ en función 
           de la temperatura $T$ y calcular la susceptibilidad magnética 
-          $\chi = \left( \frac{\partial M}{\partial H} \right)_{N, T}$.}
+          $\chi = \left( \frac{\partial M}{\partial H} \right)_{N, T}$.
+          Realizar una gráfica de ambas magnitudes.}
+
+    {\small
+    \textbf{Ayuda:} La función de Langevin $L(x)$ se define como:
+    $$ L(x) = \coth x - \frac{1}{x} $$
+    }
     
     \item{Verificar si la magnetización $M$ responde a la Ley de Curie 
           para altas temperaturas.}
     
-    \item{Calcular el calor específico del paramagneto y analizar sus 
-          comportamientos a altas y bajas temperaturas. ¿Este 
-          resultado satisface el Tercer Principio de la Termodinámica?}
+    \item{Calcular el calor específico del paramagneto, graficarlo y 
+          analizar sus comportamientos a altas y bajas temperaturas. 
+          ¿Este resultado satisface el Tercer Principio de la 
+          Termodinámica?}
 
 
 \end{enumerate}
