@@ -351,5 +351,60 @@ $$ E_i = - \boldsymbol{\mu_i} \cdot \textbf{H} = - \mu H \cos \theta_i $$
 
 \section{Paramagnetismo de Langevin cuántico}
 
+Abordemos ahora un paramagneto pero desde una perspectiva puramente 
+microscópica. Los átomos situados en los nodos de una red cristalina 
+pueden presentar electrones sin aparear. Al igual que cualquier 
+partícula elemental, los electrones presentan un momento angular 
+intrínseco llamado \emph{spin}, causal del momento magnético 
+$\boldsymbol{\mu}$.
+Si suponemos que cada momento magnético interactúa únicamente con un 
+campo magnético externo $\textbf{H}$ (y no con el resto de los momentos 
+magnéticos), el hamiltoniano de cada uno puede escribirse como:
+$$ \hat{\mathcal{H}} = 
+- \hat{\boldsymbol{\mu}} \cdot \textbf{H} = - H \hat{\mu_z} $$
+
+Consideremos que cada átomo del paramagneto bajo estudio posee un solo 
+electrón sin aparear, por ende el operador $\hat{\mu_z}$ puede 
+escribirse como:
+$$ \hat{\mu_z} = - \frac{g_s \mu_B}{\hbar} \hat{S_z} $$
+
+donde $\hat{S_z}$ es la componente $z$ del operador spin, $\mu_B$ el 
+magnetón de Bohr y $g_s \simeq 2$ el factor $g$ de spin. Ya que los 
+autovalores de $\hat{S_z}$ pueden ser $\pm 1/2 \hbar$, los niveles de 
+energía disponibles para cada momento magnético son: $$ E_m = - g_s 
+\mu_B H m, \quad  m = \pm 1/2 .$$
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Obtener la función de partición del paramagneto.}
+
+    \item{Obtener una expresión para la magnetización $M$ en función 
+          de la temperatura $T$ y calcular la susceptibilidad magnética 
+          $\chi$.
+          Realizar una gráfica de ambas magnitudes.}
+    
+    {\small
+    \textbf{Ayuda:} La función de Brillouin $B_s(x)$ se define como:
+    $$ B_s(x)  = \left( 1 + \frac{1}{2s} \right)
+    \coth \left[ \left( 1 + \frac{1}{2s} \right)x \right] -
+    \frac{1}{2s} \coth \left( \frac{x}{2s} \right) $$
+    }
+    
+    \item{Verificar si la magnetización $M$ responde a la Ley de Curie 
+          para altas temperaturas.}
+
+    \item{Calcular el calor específico del paramagneto, graficarlo y 
+          analizar sus comportamientos a altas y bajas temperaturas. 
+          Compararlo con el calor específico obtenido en el Problema 
+          \ref{sec:paramagneto-clasico}.
+          ¿A qué conclusión podemos arribar a partir de dicha 
+          comparación?
+          }
+
+\end{enumerate}
+
+
 \end{document}
 
