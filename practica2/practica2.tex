@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsmath}
+\usepackage{braket}
 \usepackage{enumitem}
 \usepackage{subcaption}
 \usepackage{fancyhdr}
@@ -406,6 +407,56 @@ energía disponibles para cada momento magnético son: $$ E_m = - g_s
 
 \end{enumerate}
 
+
+\section{Paramagneto con momento angular arbitrario}
+
+Muchos átomos en una red cristalina presentan momentos angulares más 
+allá del \emph{spin} 1/2 como el que analizamos en el problema anterior. En el 
+caso más general, su momento angular total ($\textbf{J}$) puede 
+calcularse como la suma entre el momento angular orbital ($\textbf{L}$) 
+y el momento angular intrínseco (de spin $\textbf{S}$):
+
+$$ \textbf{J} = \textbf{L} + \textbf{S} $$
+
+El hamiltoniano de un átomo con momento angular total $\textbf{J}$ inmerso 
+en un campo magnético puede escribirse como:
+
+$$ \hat{\mathcal{H}} = - \boldsymbol{\mu} \cdot \textbf{H} = 
+- g(L, S) \mu_B H \frac{1}{\hbar}\hat{J_z} $$
+
+\noindent donde
+
+$$ g(L,S) \simeq \frac{3}{2} + \frac{S(S+1) - L(L+1)}{2J(J+1)} $$
+
+\noindent es el factor de Landé.
+
+Los autovalores de tal hamiltoniano serán proporcionales a los de 
+$\hat{J_z}$:
+
+$$ \hat{J_z} \Ket{J, m_J} = m_J \hbar \Ket{J, m_J}, \quad
+m_J = -J, -J + 1, \dots, J - 1, J $$
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Obtener la función de partición del paramagneto y una 
+          expresión de la magnetización en función de la temperatura. 
+          Verificar que los resultados coinciden a los del Problema 
+          \ref{sec:paramagnetismo-cuantico} para el caso particular de 
+          $J=1/2$.}
+    
+    \item{Realizar una gráfica de la magnetización del paramagneto 
+          para $J = 3/2$, $5/2$ y $7/2$.}
+
+    \item{Calcular la magnetización del paramagneto en el límite 
+          clásico ($J \rightarrow 0$, $g \rightarrow \infty$) y 
+          verificar que recuperamos la magnetización de Langevin 
+          (Problema \ref{sec:paramagnetismo-langevin}), con $gJ = \mu$.
+          }
+
+
+\end{enumerate}
 
 \end{document}
 
