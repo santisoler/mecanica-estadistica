@@ -411,26 +411,36 @@ energía disponibles para cada momento magnético son: $$ E_{m_s} = - g_s
 
 \section{Paramagneto con momento angular arbitrario}
 
-Muchos átomos en una red cristalina presentan momentos angulares más 
-allá del \emph{spin} 1/2 como el que analizamos en el problema 
-anterior. En el caso más general, su momento angular total 
-($\hat{\textbf{J}}$) puede calcularse como la suma entre el momento 
-angular orbital ($\hat{\textbf{L}}$) y el momento angular intrínseco 
-(de spin $\hat{\textbf{S}}$):
+En muchos casos, los átomos en una red cristalina presentan momentos 
+angulares más allá del \emph{spin} 1/2 como el que analizamos en el 
+problema anterior. En el caso más general, su momento angular total 
+viene dado por los autovalores $J(J+1)\hbar$ del operador momento 
+angular total $\hat{\textbf{J}}^2$, el cual definimos como la suma de los 
+operadores momento angular orbital ($\hat{\textbf{L}}$) y momento 
+angular intrínseco (de spin $\hat{\textbf{S}}$):
 
 $$ \hat{\textbf{J}} = \hat{\textbf{L}} + \hat{\textbf{S}} $$
 
-El hamiltoniano de un átomo con momento angular total 
-$\hat{\textbf{J}}$ inmerso en un campo magnético puede escribirse como:
+Un átomo con un momento angular total arbitrario posee un momento 
+magnético, el cual podemos obtener a partir del siguiente observable 
+proporcional al operador $\hat{\textbf{J}}$:
 
-$$ \hat{\mathcal{H}} = - \hat{\boldsymbol{\mu}} \cdot \textbf{H} = 
-- g(L, S) \mu_B H \frac{1}{\hbar}\hat{J_z} $$
+$$ \hat{\boldsymbol{\mu}} =
+g(L, S) \frac{\mu_B}{\hbar} \hat{\textbf{J}} $$
 
 \noindent donde
 
 $$ g(L,S) \simeq \frac{3}{2} + \frac{S(S+1) - L(L+1)}{2J(J+1)} $$
 
 \noindent es el factor de Landé.
+
+Si consideramos, al igual que antes, que cada momento magnético 
+interactúa únicamente con el campo magnético externo, entonces el 
+hamiltoniano de un átomo con momento angular total arbitrario inmerso en un 
+campo magnético puede escribirse como:
+
+$$ \hat{\mathcal{H}} = - \hat{\boldsymbol{\mu}} \cdot \textbf{H} = 
+- g(L, S) \mu_B H \frac{1}{\hbar}\hat{J_z} $$
 
 Los autovalores de tal hamiltoniano serán proporcionales a los de 
 $\hat{J_z}$:
@@ -449,8 +459,9 @@ m_J = -J, -J + 1, \dots, J - 1, J $$
           $J=1/2$.}
     
     \item{Realizar una gráfica de la magnetización del paramagneto 
-          para $J = 3/2$, $5/2$ y $7/2$. Suponer que $g = 2$ en los 
-          tres casos.}
+          para $J = 3/2$, $5/2$ y $7/2$. Suponer que dentro del momento 
+          angular total no hay componente del momento angular orbital 
+          (es decir, $L=0$) en los tres casos.}
 
     \item{Calcular la magnetización del paramagneto en el límite 
           clásico ($J \rightarrow 0$, $g \rightarrow \infty$) y 
