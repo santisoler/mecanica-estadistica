@@ -481,23 +481,34 @@ m_J = -J, -J + 1, \dots, J - 1, J $$
 
 
 
-\section{Oscilador harmónico clásico}
+\section{Modelo de Sólido: Osciladores harmónicos clásicos}
 
-Consideremos un oscilador harmónico clásico unidimensional, cuya 
-energía viene dada por:
+Consideremos el mismo modelo de sólido que propusimos en la Práctica 1:
+un conjunto de $N$ partículas situadas en los nodos de una red 
+cristalina que oscilan alrededor de su posición de equilibrio en las 3 
+direcciones con la misma frecuencia $\omega$ y de manera independiente.
 
-$$ E = \frac{1}{2} m \dot{x}^2 + \frac{1}{2} m \omega x^2 $$
+En este problema realizaremos un modelo puramente clásico del sólido, 
+considerándolo como un conjunto de $N$ osciladores armónicos clásicos.
+La energía de cada uno de ellos viene dada por:
+
+$$ E = \frac{1}{2m}(p_x^2 + p_y^2 + p_z^2) +
+       \frac{1}{2} m \omega^2 (x^2 + y^2 + z^2) $$
 
 
 \begin{enumerate}[label=(\alph*),
                   leftmargin=2\parindent,
                   rightmargin=2\parindent]
                   
-    \item{Calcular la función de partición de un conjunto de $N$ 
-          osciladores harmónicos clásicos y su calor específico.}
+    \item{Calcular la función de partición de los $N$ osciladores.}
+
+    \item{Calcular el calor específico de los mismos y comprobar que a 
+          altas temperaturas verifica la Ley de Dulong-Petit
+          ($C_v = 3Nk_B$).}
 
     \item{¿Verifica este modelo el Tercer Principio de la 
-          Termodinámica?}
+          Termodinámica? ¿A qué conclusión puede arribar con estos 
+          resultados?}
 
 \end{enumerate}
 
@@ -506,13 +517,12 @@ $$ E = \frac{1}{2} m \dot{x}^2 + \frac{1}{2} m \omega x^2 $$
 \section{Sólido de Einstein}
 \label{sec:oscilador-clasico}
 
-Consideremos el mismo modelo de sólido que propusimos en la Práctica 1:
-un conjunto de $N$ partículas situadas en los nodos de una red 
-cristalina que oscilan alrededor de su posición de equilibrio en las 3 
-direcciones con la misma frecuencia $\omega$ y de manera independiente.
-De la misma manera que hemos hecho en la ocasión anterior, 
-consideraremos a cada átomo como un oscilador cuántico 
-tridimensional, cuya energía viene dada por:
+Consideremos el mismo modelo de sólido del problema anterior (un 
+conjunto de $N$ partículas situadas en los nodos de una red cristalina 
+que oscilan alrededor de su posición de equilibrio en las 3 direcciones 
+con la misma frecuencia $\omega$ y de manera independiente), solo que 
+ahora trataremos a cada oscilador como un oscilador harmónico 
+cuántico, cuya energía viene dada por:
 
 $$
 E_{n_x, n_y, n_z} = \left[
