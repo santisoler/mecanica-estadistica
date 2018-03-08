@@ -3,6 +3,9 @@ before_install:
 
 script:
 - mkdir _build
+- cd repaso-termodinamica
+- mv output/*.pdf ../_build
+- cd ..
 - cd practica1
 - make
 - mv output/*.pdf ../_build

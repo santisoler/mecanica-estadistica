@@ -1,0 +1,79 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[hmargin=3cm, vmargin=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+
+\titleformat{\section}
+  {\bf}{Problema \thesection.}{0.5em}{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+% Fancy Header
+% ------------
+\pagestyle{fancy}
+%~ \renewcommand{\headrulewidth}{0pt}
+\lhead{\small Veronica Gargiulo}
+\chead{\small \the\year}
+\rhead{\small Santiago Soler}
+
+
+
+% Title
+% -----
+\thispagestyle{plain}
+\begin{center}
+    \textbf{\large
+        Mecánica Estadística \\
+        Repaso de Termodinámica
+    }
+\end{center}
+\vspace{-1.5em}
+
+
+
+% Excersises
+% ----------
+\section{}
+
+Consideremos $n$ moles de un gas ideal monoatómico que se encuentra en 
+un estado inicial de presión $P_A$ y volumen $V_A$. Supongamos que se 
+incrementa la temperatura a volumen constante hasta duplicar la 
+presión. Luego el gas se expande isotérmicamente hasta que la presión 
+desciende a su valor original y posteriormente se comprime a presión 
+constante hasta que el volumen recupera su valor inicial.
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Representar estos procesos en el plano $P$-$V$ y en el plano 
+          $P$-$T$.}
+    
+    \item{Calcular el trabajo realizado por el sistema, el calor 
+          entregado al mismo y su variación de la energía interna en 
+          cada proceso.}
+    
+    \item{Calcular la variación energía interna del ciclo completo e 
+          interpretar el resultado.}
+    
+    \item{Calcular el trabajo realizado por el sistema y el calor 
+          entregado al mismo a lo largo del ciclo completo. ¿El sistema 
+          realiza trabajo o se realiza trabajo sobre el mismo? ¿El 
+          sistema recibe calor o lo entrega al entorno?}
+
+\end{enumerate}
+
+\end{document}
+
