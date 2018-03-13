@@ -15,7 +15,6 @@ Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
 
 
 ## Bibliografía
-
 ### Mecánica Estadística:
 * F. Reif, **Fundamentals of Statistical and Thermal Physics**, McGraw-Hill
 * J. Ortín y J. M. Sancho, **Curso de Física Estadística**, Ed. Universidad de Barcelona.
