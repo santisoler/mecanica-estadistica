@@ -1,10 +1,35 @@
-# Repositorio de Mecánica Estadística 2018
-
+# Mecánica Estadística 2018
 
 [![Travis CI][travis-shield]][travis-ci]
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-En él podrás encontrar prácticas, apuntes y materiales de la cátedra.
+En este repositorio podrás encontrar prácticas, apuntes y materiales de la
+cátedra.
+
+
+## Prácticas
+
+Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
+
+* [Repaso de Termodinámica](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.4/repaso-termodinamica.pdf)
+* [Práctica 1: Colectivo Microcanónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.4/practica1.pdf)
+
+
+## Bibliografía
+
+Mecánica estadística:
+
+* F. Reif, *Fundamentals of Statistical and Thermal Physics*, McGraw-Hill
+* J. Ortín y J. M. Sancho, *Curso de Física Estadística*, Ed. Universidad de Barcelona.
+* G. Zgrablich, *Elementos de Mecánica Estadística*, Ed. UAM. México, 2009
+* R. Pathria, *Statistical Mechanics* Pergamon Press.
+* T. Hill, *An Introduction to Statistical Thermodynamics*, Dover
+* B. Cowan, *Topics in Statistical Mechanics*, Imperial College Press, 2005
+
+Otras áreas complementarias:
+
+* **Termodinámica:** Zemansky y Dittman, *Heat and Thermodynamics*
+* **Mecánica Cuántica:** Cohen-Tannoudji,‎ Diu and Laloe, *Quantum Mechanics*
 
 
 ## Licencia
