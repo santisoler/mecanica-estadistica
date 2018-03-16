@@ -2,19 +2,7 @@ before_install:
 - "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-latex-base texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-lang-spanish dvipng"
 
 script:
-- mkdir _build
-- cd repaso-termodinamica
 - make
-- mv output/*.pdf ../_build
-- cd ..
-- cd practica1
-- make
-- mv output/*.pdf ../_build
-- cd ..
-- cd practica2
-- make
-- mv output/*.pdf ../_build
-- cd ..
 
 deploy:
   provider: releases
