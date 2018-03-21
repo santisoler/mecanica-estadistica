@@ -1,4 +1,4 @@
-TARGETS = practica1 practica2 repaso-termodinamica
+TARGETS = practica1 practica2 practica3 repaso-termodinamica
 
 all: _build/$(TARGETS)
 
