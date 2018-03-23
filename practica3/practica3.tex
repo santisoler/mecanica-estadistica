@@ -84,5 +84,72 @@ térmico y químico.
 \end{enumerate}
 
 
+
+\section{Variación de la presión atmosférica con la altitud}
+
+Consideremos un modelo aproximado de la atmósfera dividiendo una 
+columna vertical en múltiples capas, donde cada una contiene partículas 
+de un gas ideal que se encuentran en equilibrio térmico y difusivo con 
+las capas vecinas. Además, por encontrarse en cercanía de la superficie 
+de la Tierra, cada partícula se encuentra sometida al potencial 
+gravitatorio que esta genera.
+
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Obtener la siguiente expresión para el potencial químico de 
+          una capa ubicada a una altitud $z$:
+          $$ \mu =
+          k_B T \ln \left( \frac{\langle N \rangle \lambda^3}{V} \right)
+          + mgz $$
+          donde $\langle N \rangle$ es el valor medio de la cantidad de 
+          partículas en la capa, $V$ es el volumen de la misma, 
+          $\lambda$ es la longitud de onda de De Broglie, $m$ es la 
+          masa de cada partícula del gas ideal y $g$ es la aceleración 
+          de la gravedad en la cercanías de la superficie terrestre.
+          }
+
+    {\small
+    \textbf{Ayuda:}
+    La función exponencial puede expresarse en desarrollo de serie de 
+    Taylor de la siguiente manera:
+    $$ e^x = \sum_{n=0}^\infty \frac{x^n}{n!} $$
+    Y la longitud de onda de De Broglie se define como:
+    $$ \lambda = \frac{h}{\sqrt{2\pi m k_B T}} $$
+    }
+
+    \item{Obtener la siguiente relación entre la presión atmosférica 
+          en función de la altura $z$:
+          $$ p(z) = p(0) e^{-z/z_c} $$
+          donde $z_c = k_B T / mg$ es una altitud característica.
+          }
+    
+    \item{Interpretar el significado de $z_c$ y calcule su valor si 
+          consideramos una atmósfera a $T = 290 K$ compuesta por 
+          nitrógeno (N$_2$).}
+
+    {\small
+    \textbf{Ayuda:}
+    El peso atómico del Nitrógeno es igual a 14 g/mol.
+    }
+
+    \item{Considerando el valor de $z_c$ obtenido en el punto anterior, 
+          realizar una gráfica de la presión en función de la 
+          altitud y calcular su valor a 3000m.}
+
+    \item{Discuta la validez de la hipótesis de equilibrio térmico 
+          entre las diferentes capas y su relevancia en los resultados 
+          obtenidos en los puntos anteriores.}
+    
+    {\small
+    \textbf{Ayuda:}
+    La temperatura de la atmósfera desciende (en promedio) 6$^\circ$C 
+    por km.
+    }
+
+\end{enumerate}
+
 \end{document}
 
