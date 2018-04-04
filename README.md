@@ -10,9 +10,9 @@ cátedra.
 ## Prácticas
 
 Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
-* [Repaso de Termodinámica](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.4/repaso-termodinamica.pdf)
-* [Práctica 1: Colectivo Microcanónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.4/practica1.pdf)
-
+* [Repaso de Termodinámica](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.5/repaso-termodinamica.pdf)
+* [Práctica 1: Colectivo Microcanónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.5/practica1.pdf)
+* [Práctica 2: Colectivo Canónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.5/practica2.pdf)
 
 ## Bibliografía
 ### Mecánica Estadística:
