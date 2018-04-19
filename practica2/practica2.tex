@@ -482,6 +482,7 @@ m_J = -J, -J + 1, \dots, J - 1, J $$
 
 
 \section{Modelo de Sólido: Osciladores harmónicos clásicos}
+\label{sec:oscilador-clasico}
 
 Consideremos el mismo modelo de sólido que propusimos en la Práctica 1:
 un conjunto de $N$ partículas situadas en los nodos de una red 
@@ -515,7 +516,6 @@ $$ E = \frac{1}{2m}(p_x^2 + p_y^2 + p_z^2) +
 
 
 \section{Sólido de Einstein}
-\label{sec:oscilador-clasico}
 
 Consideremos el mismo modelo de sólido del problema anterior (un 
 conjunto de $N$ partículas situadas en los nodos de una red cristalina 
@@ -540,26 +540,13 @@ $$
                   leftmargin=2\parindent,
                   rightmargin=2\parindent]
 
-    \item{Calcular la función de partición del sólido, su entropía y su calor 
-          específico.}
-    
-    \item{En la práctica anterior hemos tratado el sólido de Einstein 
-          partiendo de dos suposiciones:
-          (i) que los $N$ osciladores tridimensionales pueden ser 
-          tratados como $3N$ osciladores unidimensionales, y
-          (ii) que la energía de punto cero podría ser anulada.
-          Demostrar que ambas suposiciones son válidas, es decir, que 
-          las propiedades termodinámicas del sólido no se ven 
-          modificadas al aplicarlas.}
-    
-    \item{Realizar una gráfica del calor específico del sólido y 
-          verificar que se cumple la ley de Dulong y Petit para altas 
-          temperaturas ($C_v \simeq 3Nk_B$).}
+    \item{Calcular la función de partición del sólido.
+          Obtener luego una expresión del valor medio de la energía y a
+          partir de ella determinar su calor específico ($C_V$).}
 
-    \item{Comparar el calor específico obtenido en el punto anterior 
-          con el del Problema \ref{sec:oscilador-clasico}. Demostrar 
-          que el $C_v$ calculado satisface el Tercer Principio. ¿Cómo 
-          podemos interpretar este resultado?}
+    \item{Realizar una gráfica del calor específico del sólido. 
+          Verificar que se cumple la ley de Dulong y Petit para altas 
+          temperaturas ($C_V \simeq 3Nk_B$).}
     
     \item{Definamos la temperatura de Einstein como
           $T_E = \hbar \omega / k_B $, la cual es característica de 
@@ -573,10 +560,33 @@ $$
           ¿Cómo se puede interpretar esta diferencia entre ambos 
           materiales en función del modelo microscópico aplicado?
           }
+  
+    \item{Comparar el calor específico obtenido en el punto anterior 
+          con el del Problema \ref{sec:oscilador-clasico}. Demostrar 
+          que el $C_V$ calculado satisface el Tercer Principio. ¿Cómo 
+          podemos interpretar este resultado?}
 
-    \item{Demostrar que el valor medio de ocupación del nivel $n$ es:
-          $$<n> = \frac{1}{e^{\hbar \omega / kT} - 1}$$
-          }
+    \item{La energía total del sólido puede expresarse como:
+          $$ E =
+          \sum_{i=1}^{3N} \left( n_i + \frac{1}{2} \right) \hbar \omega, $$
+          donde los $n_i$ son los niveles de ocupación de los 
+          osciladores unidimensionales, es decir, el nivel energético 
+          que ocupa cada oscilador.
+          Si calculamos el valor medio de la energía del sólido, la 
+          expresión anterior puede reescribirse como:
+          $$ \langle E \rangle =
+          \sum_{i=1}^{3N}
+          \left( \langle n_i \rangle + \frac{1}{2} \right) \hbar \omega, $$
+          y dado que los osciladores son independientes, el valor medio 
+          del nivel de ocupación será el mismo para todos:
+          $\langle n \rangle$.
+          Por lo tanto, podemos escribir el valor medio de la energía 
+          del sólido de la siguiente manera:
+          $$ \langle E \rangle =
+          3N \left( \langle n \rangle + \frac{1}{2} \right) \hbar \omega. $$
+          Demostrar que el valor medio del nivel de ocupación puede 
+          expresarse como:
+          $$ \langle n \rangle = \frac{1}{e^{\hbar \omega / kT} - 1}. $$}
 
 \end{enumerate}
 
