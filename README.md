@@ -10,9 +10,9 @@ cátedra.
 ## Prácticas
 
 Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
-* [Repaso de Termodinámica](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.5/repaso-termodinamica.pdf)
-* [Práctica 1: Colectivo Microcanónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.5/practica1.pdf)
-* [Práctica 2: Colectivo Canónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.5/practica2.pdf)
+* [Repaso de Termodinámica](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.6/repaso-termodinamica.pdf)
+* [Práctica 1: Colectivo Microcanónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.6/practica1.pdf)
+* [Práctica 2: Colectivo Canónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.2.6/practica2.pdf)
 
 ## Bibliografía
 ### Mecánica Estadística:
@@ -21,11 +21,14 @@ Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
 * G. Zgrablich, **Elementos de Mecánica Estadística**, Ed. UAM. México, 2009
 * R. Pathria, **Statistical Mechanics** Pergamon Press.
 * T. Hill, **An Introduction to Statistical Thermodynamics**, Dover
-* B. Cowan, **Topics in Statistical Mechanics**, Imperial College Press, 2005
+* B. Cowan, [**Topics in Statistical Mechanics**][cowan-google-books], Imperial College Press, 2005
 
 ### Otras áreas complementarias:
 * **Termodinámica:** Zemansky y Dittman, *Heat and Thermodynamics*
 * **Mecánica Cuántica:** Cohen-Tannoudji,‎ Diu and Laloe, *Quantum Mechanics*
+
+### Apuntes y otros materiales
+* N.P. Vásquez, [**Mecánica Estadística: una introducción**][vazquez], Universidad de Los Andes, Mérida, Venezuela, 2002
 
 
 ## Licencia
@@ -43,3 +46,5 @@ licencia [Creative Commons Attribution-ShareAlike 4.0 International License][cc-
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+[cowan-google-books]: https://books.google.com.ar/books?id=Cs42DwAAQBAJ&pg=PA1&source=gbs_toc_r&cad=4#v=onepage&q&f=false
+[vazquez]: http://webdelprofesor.ula.ve/ciencias/pantoja/documents/estadistica.pdf
