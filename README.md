@@ -22,6 +22,7 @@ Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
 * R. Pathria, **Statistical Mechanics** Pergamon Press.
 * T. Hill, **An Introduction to Statistical Thermodynamics**, Dover
 * B. Cowan, [**Topics in Statistical Mechanics**][cowan-google-books], Imperial College Press, 2005
+* C. Kittel **Introduction to Solid State Physics**, Wiley & Sons
 
 ### Otras áreas complementarias:
 * **Termodinámica:** Zemansky y Dittman, *Heat and Thermodynamics*
