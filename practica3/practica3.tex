@@ -47,7 +47,7 @@
 % Excersises
 % ----------
 
-\section{Interfaz Sólido - Vapor}
+\section{Equilibrio Sólido - Vapor}
 
 Consideremos un sólido encerrado en un recipiente al vacío que 
 contiene tanto al sólido como a un vapor de partículas que lo componen.
@@ -65,7 +65,7 @@ térmico y químico.
     \item{Determinar la función de partición macrocanónica de las 
           partículas que son adsorbidas por la superficie del sólido.}
 
-    \item{Calcular la cantidad de partículas adsorbidas $N$ en función de 
+    \item{Calcular la cantidad de partículas adsorbidas $N_0$ en función de 
           $T$ y $\mu$.}
           
     {\small
@@ -75,11 +75,25 @@ térmico y químico.
     $$ (p + q)^n = \sum_{k=0}^n \frac{n!}{(n-k)! \, k!} \, p^k q^{n-k} $$
     }
     
-    \item{Suponiendo que la superficie tiene una baja ocupación ($N/M 
-          \ll 1$), mostrar que el potencial químico puede escribirse 
+    \item{Demostrar que el potencial químico puede escribirse 
           como:
-          $$ \mu = k_B T \ln(N/M) - \epsilon_0 $$
+          $$ \mu = k_B T \ln(\frac{\theta}{1 - \theta}) - \epsilon_0, $$
+          donde $\theta = N_0/M$ es el \emph{cubrimiento}, es decir, la 
+          relación entre la cantidad de partículas adsorbidas y la cantidad 
+          total de sitios en la superficie del sólido.
           }
+    
+    \item{Modelice el vapor como un gas ideal en el colectivo macrocanónico.
+          Determine el valor medio de la cantidad de partículas en el vapor y 
+          despejar de la expresión obtenida el potencial químico del vapor.
+          }
+    
+    \item{Dado que el vapor y el sólido se encuentran en equilibrio 
+          termodinámico, los potenciales químicos de ambos son iguales. 
+          Demuestre que la presión de equilibrio del gas puede escribirse 
+          como:
+          $$ P = \frac{\theta}{1 - \theta} f(T), $$
+          donde $f(T)$ es una función de la temperatura.
 
 \end{enumerate}
 
