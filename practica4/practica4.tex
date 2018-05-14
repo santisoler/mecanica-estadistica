@@ -1,0 +1,155 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[hmargin=3cm, vmargin=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+
+\titleformat{\section}
+  {\bf}{Problema \thesection.}{0.5em}{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+% Fancy Header
+% ------------
+\pagestyle{fancy}
+%~ \renewcommand{\headrulewidth}{0pt}
+\lhead{\small Veronica Gargiulo}
+\chead{\small \the\year}
+\rhead{\small Santiago Soler}
+
+
+
+% Title
+% -----
+\thispagestyle{plain}
+\begin{center}
+    \textbf{\large
+        Mecánica Estadística \\
+        Práctica 4 - Gases Cuánticos
+    }
+\end{center}
+\vspace{-1.5em}
+
+
+
+% Excersises
+% ----------
+
+\section{Gas de Fermiones}
+
+Consideremos un gas de fermiones no interactuantes dentro de un 
+recipiente de volumen $V$.
+Dada la naturaleza de los fermiones, debemos tratar al gas bajo una 
+estadística de Fermi-Dirac, a partir de la cual podemos determinar el 
+número medio de ocupación de cada nivel:
+
+$$ n(\epsilon) = \frac{1}{e^{\beta(\epsilon - \mu)} + 1} $$
+
+\noindent y la gran función de partición:
+
+$$
+\mathcal{Q}_{FD} =
+  \prod_j \left[ e^{-\beta(\epsilon_j - \mu)} + 1\right],
+$$
+
+\noindent donde $\mu$ es el potencial químico del gas.
+
+En el límite de $T = 0$ todos los estados de energía entre 0 y $\mu$ 
+están ocupados, mientras que los niveles superiores se encuentran 
+disponibles.
+En esta situación se considera que el gas está \emph{completamente 
+degenerado}.
+Dado este estado particular que presentan los gases de fermiones, se 
+define a la energía de Fermi $\epsilon_F$ como:
+
+$$ \epsilon_F = \mu(T=0). $$
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+    
+    \item{Determine el valor medio de número de partículas en el gas 
+          ($N$) en el caso de un gas de Fermi completamente degenerado.
+          Obtenga una expresión de la energía de Fermi en función de 
+          $N$ y $V$, y demuestre que la densidad de estados del gas 
+          puede escribirse como:
+          $$
+          g(\epsilon) =
+            \frac{3}{2} \frac{N}{\epsilon_F} \left( 
+            \frac{\epsilon}{\epsilon_F} \right)^{\frac{1}{2}}
+          $$
+          }
+
+    \item{Determine el valor medio de la energía interna ($E$) para el 
+          mismo gas completamente degenerado.
+          }
+    
+    \item{Obtenga una expresión de la presión del gas de Fermi completamente 
+          degenerado en función de la energía de Fermi.
+          Demuestre que, al igual que en el caso del gas ideal 
+          clásico, se cumple la siguiente relación entre la presión 
+          y la energía interna:
+          $$ pV = \frac{2}{3} \langle E \rangle. $$
+          Resaltar el hecho de que incluso a $T = 0$, el gas 
+          de Fermi presenta presiones no nulas.
+          }
+
+    \item{\textbf{Calor específico.}\\
+          Para determinar el calor específico del gas de Fermi, al 
+          menos en el rango de muy bajas temperaturas, es necesario 
+          salirnos del límite de $T = 0$ para así poder obtener una 
+          expresión de la energía media en función de $T$.
+          La forma correcta de hacerlo sería resolver la integral que 
+          involucra la energía interna considerando la expresión analítica 
+          del número medio de ocupación $n(\epsilon)$, método que se 
+          conoce como el desarrollo de Sommerfeld (1928).
+          Sin embargo esto requiere mucho trabajo y se escapa de los 
+          objetivos del ejercicio.
+
+          Nosotros intentaremos una forma alternativa\footnote{Este 
+          método alternativo se puede encontrar en el libro 
+          \emph{Introduction to Solid State Physics}, Kittel, p.151.}, 
+          la cual nos permitirá obtener al menos el primer término del 
+          desarrollo de Sommerfeld.
+          
+          Si definimos $\Delta E = E(T) - E(T=0)$, el calor específico 
+          puede calcularse como:
+          $$
+          C_V =
+          \left( \frac{\partial \Delta E}{\partial T} \right)_{N, V},
+          $$
+          ya que restarle la energía del estado fundamental es 
+          equivalente a un corrimiento rígido de la energía.
+          
+          Suponiendo que la cantidad de partículas en el gas no varía 
+          significativamente para temperaturas cercanas al cero 
+          absoluto, la diferencia entre $N(T)$ y $N(T=0)$ es 
+          aproximadamente nula, y por ende puede ser introducida en la 
+          expresión de $\Delta E$ (siendo previamente multiplicada por 
+          $\epsilon_F$).
+          Esta nueva expresión de $\Delta E$ es posible derivarla con 
+          respecto a la temperatura para obtener una expresión del 
+          calor específico.
+          
+          Demostrar entonces, que a través de este método obtenemos 
+          el primer término del desarrollo de Sommerfeld:
+          $$ C_V \simeq N k \frac{\pi^2}{2} \frac{kT}{\epsilon_F}. $$
+          
+         }
+
+\end{enumerate}
+
+\end{document}
+
