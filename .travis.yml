@@ -11,6 +11,7 @@ deploy:
   file:
     - _build/practica1.pdf
     - _build/practica2.pdf
+    - _build/practica3.pdf
     - _build/repaso-termodinamica.pdf
   skip_cleanup: true
   on:
