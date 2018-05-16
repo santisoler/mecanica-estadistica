@@ -47,16 +47,14 @@
 % Excersises
 % ----------
 
-\section{Interfaz Sólido - Vapor}
+\section{Adsorción}
 
-Consideremos un sólido encerrado en un recipiente al vacío que 
-contiene tanto al sólido como a un vapor de partículas que lo componen.
-La superficie del sólido posee $M$ vacancias que permiten que las 
-partículas del vapor sean adsorbidas. Vamos a suponer que cada 
-partícula del gas que se sitúa en una vacancia posee una energía 
-$-\epsilon_0$ con respecto a la que tendría si perteneciese al vapor, 
-y que ambas componentes se encuentran en equilibrio 
-térmico y químico.
+Consideremos un sólido que se encuentra en equilibrio termodinámico con un 
+gas encerrado en un volumen $V$.
+La superficie del sólido posee $M$ vacancias que permiten que las partículas 
+del gas sean adsorbidas. Vamos a suponer que cada partícula del gas que se 
+sitúa en una vacancia posee una energía $-\epsilon_0$ con respecto a la mínima 
+que tendría si perteneciese al gas.
 
 \begin{enumerate}[label=(\alph*),
                   leftmargin=2\parindent,
@@ -65,8 +63,15 @@ térmico y químico.
     \item{Determinar la función de partición macrocanónica de las 
           partículas que son adsorbidas por la superficie del sólido.}
 
-    \item{Calcular la cantidad de partículas adsorbidas $N$ en función de 
-          $T$ y $\mu$.}
+    \item{\label{item:cubrimiento}
+          Calcular la cantidad de partículas adsorbidas $N_0$ en función de 
+          $T$ y $\mu$.
+          Definamos el \emph{cubrimiento} de la superficie del sólido como 
+          $\theta = N_0/M$, es decir, la cantidad de partículas adsorbidas 
+          sobre la cantidad de sitios en la superficie.
+          Grafique $\theta$ en función de $x = (\epsilon_0 - \mu)/kT$, para 
+          valores de $x$ tanto positivos como negativos, ya que el potencial 
+          químico $\mu$ puede ser tanto positivo como negativo.}
           
     {\small
     \textbf{Ayuda:}
@@ -75,11 +80,34 @@ térmico y químico.
     $$ (p + q)^n = \sum_{k=0}^n \frac{n!}{(n-k)! \, k!} \, p^k q^{n-k} $$
     }
     
-    \item{Suponiendo que la superficie tiene una baja ocupación ($N/M 
-          \ll 1$), mostrar que el potencial químico puede escribirse 
+    \item{Demostrar que el potencial químico puede escribirse 
           como:
-          $$ \mu = k_B T \ln(N/M) - \epsilon_0 $$
+          $$
+          \mu =
+          k_B T \ln \left( \frac{\theta}{1 - \theta} \right) - \epsilon_0.
+          $$
           }
+    
+    \item{Modelice el gas como un gas ideal en el colectivo macrocanónico.
+          Determine el valor medio de la cantidad de partículas en el gas y 
+          despejar de la expresión obtenida el potencial químico del gas.
+          }
+    
+    \item{Dado que el gas y el sólido se encuentran en equilibrio 
+          termodinámico, los potenciales químicos de ambos son iguales. 
+          Demuestre que la presión de equilibrio del gas puede escribirse 
+          como:
+          $$ P = \frac{\theta}{1 - \theta} f(T), $$
+          donde $f(T)$ es una función de la temperatura.
+          }
+    
+    \item{Si consideramos que el gas posee una densidad muy baja, el volumen 
+          medio por partícula es mucho mayor que la longitud de onda térmica 
+          de De Broglie, por ende:
+          $$ \lambda^3 \frac{N}{V} \ll 1, $$
+          donde $N$ es la cantidad de partículas en el gas.
+          Determine el signo del potencial químico del gas e interprete la 
+          gráfica realizada en el item \ref{item:cubrimiento}. }
 
 \end{enumerate}
 
@@ -100,10 +128,10 @@ gravitatorio que esta genera.
                   rightmargin=2\parindent]
 
     \item{Obtener la siguiente expresión para el potencial químico de 
-          una capa ubicada a una altitud $z$:
+          una capa ubicada a una altitud $h$:
           $$ \mu =
           k_B T \ln \left( \frac{\langle N \rangle \lambda^3}{V} \right)
-          + mgz $$
+          + mgh $$
           donde $\langle N \rangle$ es el valor medio de la cantidad de 
           partículas en la capa, $V$ es el volumen de la misma, 
           $\lambda$ es la longitud de onda de De Broglie, $m$ es la 
@@ -122,12 +150,12 @@ gravitatorio que esta genera.
 
     \item{Obtener la siguiente relación entre la presión atmosférica 
           en función de la altura $z$:
-          $$ p(z) = p(0) e^{-z/z_c} $$
-          donde $z_c = k_B T / mg$ es una altitud característica.
-          Realizar una gráfica de la presión en función de $z/z_c$.
+          $$ p(z) = p(0) e^{-h/h_c} $$
+          donde $h_c = k_B T / mg$ es una altitud característica.
+          Realizar una gráfica de la presión en función de $h/h_c$.
           }
     
-    \item{Interpretar el significado de $z_c$ y calcule su valor si 
+    \item{Interpretar el significado de $h_c$ y calcule su valor si 
           consideramos una atmósfera a $T = 290 K$ compuesta por 
           nitrógeno (N$_2$).}
 
@@ -136,7 +164,7 @@ gravitatorio que esta genera.
     El peso atómico del Nitrógeno es igual a 14 g/mol.
     }
 
-    \item{Considerando el valor de $z_c$ obtenido en el punto anterior 
+    \item{Considerando el valor de $h_c$ obtenido en el punto anterior 
           y una presión de 101325 Pa en la superficie terrestre,
           calcular la presión a 3000m.}
 
