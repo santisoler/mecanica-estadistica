@@ -65,8 +65,15 @@ térmico y químico.
     \item{Determinar la función de partición macrocanónica de las 
           partículas que son adsorbidas por la superficie del sólido.}
 
-    \item{Calcular la cantidad de partículas adsorbidas $N_0$ en función de 
-          $T$ y $\mu$.}
+    \item{\label{item:cubrimiento}
+          Calcular la cantidad de partículas adsorbidas $N_0$ en función de 
+          $T$ y $\mu$.
+          Definamos el \emph{cubrimiento} de la superficie del sólido como 
+          $\theta = N_0/M$, es decir, la cantidad de partículas adsorbidas 
+          sobre la cantidad de sitios en la superficie.
+          Grafique $\theta$ en función de $x = (\epsilon_0 - \mu)/kT$, para 
+          valores de $x$ tanto positivos como negativos, ya que el potencial 
+          químico $\mu$ puede ser tanto positivo como negativo.}
           
     {\small
     \textbf{Ayuda:}
@@ -79,11 +86,8 @@ térmico y químico.
           como:
           $$
           \mu =
-          k_B T \ln \left( \frac{\theta}{1 - \theta} \right) - \epsilon_0,
+          k_B T \ln \left( \frac{\theta}{1 - \theta} \right) - \epsilon_0.
           $$
-          donde $\theta = N_0/M$ es el \emph{cubrimiento}, es decir, la 
-          relación entre la cantidad de partículas adsorbidas y la cantidad 
-          total de sitios en la superficie del sólido.
           }
     
     \item{Modelice el vapor como un gas ideal en el colectivo macrocanónico.
@@ -98,6 +102,14 @@ térmico y químico.
           $$ P = \frac{\theta}{1 - \theta} f(T), $$
           donde $f(T)$ es una función de la temperatura.
           }
+    
+    \item{Si consideramos que el vapor posee una densidad muy baja, el volumen 
+          medio por partícula es mucho mayor que la longitud de onda térmica 
+          de De Broglie, por ende:
+          $$ \lambda^3 \frac{N}{V} \ll 1, $$
+          donde $N$ es la cantidad de partículas en el vapor.
+          Determine el signo del potencial químico del vapor e interprete la 
+          gráfica realizada en el item \ref{item:cubrimiento}. }
 
 \end{enumerate}
 
