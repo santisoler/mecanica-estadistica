@@ -173,5 +173,44 @@ $$ \epsilon_F = \mu(T=0). $$
 
 \end{enumerate}
 
+
+\section{Gas de Bosones}
+
+Consideremos un gas de bosones no interactuantes dentro de un 
+recipiente de volumen $V$.
+Dada la naturaleza de los bosones, debemos tratar al gas bajo una 
+estadística de Bose-Einstein, a partir de la cual podemos determinar el 
+número medio de ocupación de cada nivel:
+
+$$ n(\epsilon) = \frac{1}{e^{\beta(\epsilon - \mu)} - 1} $$
+
+\noindent donde $\mu$ es el potencial químico del gas, el cual satisface la 
+siguiente relación:
+
+$$ \mu < \epsilon $$
+
+\noindent para todas las energías $\epsilon$ accesibles por el sistema.
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+     \item{Justifique por qué es necesario incluir explícitamente el número 
+           de ocupación del nivel fundamental($N_0$) a la hora de calcular el 
+           número de partículas en el sistema de la siguiente manera:
+           $$ 
+           N = 
+           N_0 + \int\limits_0^\infty g(\epsilon) n(\epsilon) 
+           d\epsilon.
+           $$
+           Obtenga una expresión de $N_0$, determine la relación entre él y el 
+           potencial químico $\mu$ en el caso de que el nivel fundamental 
+           posea alta ocupación.
+           Demuestre que en dicha situación, el potencial químico es muy 
+           próximo a cero.
+           }
+
+\end{enumerate}
+
 \end{document}
 
