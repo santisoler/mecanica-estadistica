@@ -48,6 +48,7 @@
 % ----------
 
 \section{Gas de Fermiones}
+\label{sec:gas-de-fermi}
 
 Consideremos un gas de fermiones no interactuantes dentro de un 
 recipiente de volumen $V$.
@@ -174,6 +175,7 @@ $$ \epsilon_F = \mu(T=0). $$
 \end{enumerate}
 
 
+\newpage
 \section{Gas de Bosones}
 
 Consideremos un gas de bosones no interactuantes dentro de un 
@@ -244,6 +246,95 @@ $$ \mu < \epsilon $$
            }
 
 \end{enumerate}
+
+
+\section{Paramagnetismo de Pauli}
+
+En prácticas anteriores hemos estudiado el origen del paramagnetismo que 
+presentan ciertos materiales debido a la excitación de los momentos 
+magnéticos intrínsecos de los átomos de la red cristalina.
+Sin embargo existe otro tipo de paramagnetismo que presentan algunos metales 
+alcalinos y nobles, el cual no posee su origen en los momentos magnéticos de 
+los átomos localizados, sino en la interacción del campo magnético externo 
+con los momentos magnéticos intrínsecos de los electrones de conducción del 
+metal.
+
+Consideremos un metal compuesto por $N$ átomos del mismo tipo, donde cada uno 
+de ellos contribuye con un solo electrón libre al gas de electrones de 
+conducción.
+Una hipótesis válida es considerar que los electrones de conducción 
+constituyen un gas ideal que no interactúa con los átomos de la red ni entre 
+ellos.
+Supongamos además que este metal se encuentra a temperatura ambiente y es 
+sometido a un campo magnético externo débil $H$.
+Dado que cada electrón interactúa únicamente con este campo magnético 
+externo, los niveles energéticos monoparticulares pueden escribirse como:
+
+$$
+\epsilon =
+\frac{\hbar^2 \pi^2}{2m_e V^{2/3}} (n_x^2 + n_y^2 + n_z^2) \pm \mu_B H,
+\quad
+n_x, n_y, n_z = 1, 2, 3, \dots
+$$
+
+\noindent donde $V$ es el volumen que ocupa el metal y el signo del término 
+asociado a la energía de interacción con el campo viene dado por la 
+orientación del spin del electrón: up o down.
+
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+     \item{Si suponemos que dentro del metal hay un electrón por cada
+           $10^{-30}$m$^3$, utilice la expresión de la energía de Fermi 
+           obtenida en el problema \ref{sec:gas-de-fermi} para determinar el 
+           valor de $\epsilon_F$ de los electrones de conducción.
+           Obtenga la temperatura de Fermi del gas.
+           ¿Podemos considerarlo completamente degenerado?
+           }
+
+     \item{Llamemos $N_+$ y $N_-$ a la cantidad de electrones con spin 
+           orientado en contra y a favor del campo magnético (down y up) 
+           respectivamente.
+           Si definimos $g_+(\epsilon)$ y $g_-(\epsilon)$ a las densidades de 
+           estado correspondientes a cada grupo de electrones, podemos 
+           expresar a $N_\pm$ como:
+           $$
+           N_\pm =
+           \frac{1}{2} \int\limits_{\pm \mu_B H}^{\infty}
+           g_\pm(\epsilon) n(\epsilon) d\epsilon.
+           $$
+           Demuestre que las densidades de estado $g_\pm(\epsilon)$ pueden 
+           expresarse en función de la densidad de estado del gas sin campo 
+           magnético de la siguiente manera:
+           $$ g_\pm(\epsilon) = g(\epsilon \mp \mu_B H). $$
+           }
+
+     \item{La magnetización del metal debido a los electrones de conducción 
+           puede expresarse como:
+           $$ M = \mu_B (N_- - N_+). $$
+           Teniendo en cuenta que el campo magnético es débil, obtenga una 
+           expresión para dicha magnetización en función del campo $H$.
+           Interprete este resultado en función del modelo microscópico 
+           (intente hacerlo a través de las gráficas de $g_\pm(\epsilon)$).
+           }
+
+     {\small \textbf{Ayuda:} Dado que el campo magnético es débil, es válido 
+     realizar un desarrollo en series de Taylor de la densidad de estados 
+     $g(\epsilon \mp \mu_B H)$ en primer orden alrededor de $\epsilon$ a la 
+     hora de resolver las integrales de $N_\pm$.
+     }
+
+     \item{Teniendo en cuenta el orden de magnitud de la temperatura de Fermi 
+           obtenida en el primer item, ¿cómo espera que la magnetización $M$ 
+           dependa de la temperatura (para valores de $T$ próximos a la 
+           temperatura ambiente, es decir, para temperaturas por debajo del 
+           punto de fusión del metal)?
+           }
+
+\end{enumerate}
+
 
 \end{document}
 
