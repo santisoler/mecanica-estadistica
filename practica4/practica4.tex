@@ -337,5 +337,115 @@ orientación del spin del electrón: up o down.
 \end{enumerate}
 
 
+\section{Radiación de Cuerpo Negro}
+
+El problema sobre el origen de la radiación emitida por un cuerpo negro ha 
+sido uno de los disparadores de la aparición de la mecánica cuántica a 
+principios del Siglo XX.
+Un cuerpo negro es aquel que es capaz de absorber toda la radiación 
+electromagnética que incide sobre él.
+Un modelo válido del mismo consiste en una cavidad de volumen $V$ con un 
+pequeño orificio a través del cual ingresa la radiación electromagnética 
+que es absorbida y emitida por las paredes internas de la cavidad.
+La radiación electromagnética ingresada por la cavidad posee 
+probabilidades casi nulas de salir a través de la misma, por lo tanto podemos 
+considerar que la cavidad absorbe toda la radiación electromagnética que 
+ingresa, manteniendo en equilibrio termodinámico las paredes y la radiación 
+contenida.
+
+La física clásica de finales del Siglo XIX proponía modelar el cuerpo negro 
+como un conjunto de ondas electromagnéticas estacionarias dentro de la 
+cavidad, a las cuales se les asignaba energías continuas, de acuerdo con la 
+teoría electromagnética clásica conocida hasta el momento.
+Sin embargo, los resultados teóricos no solo no coincidían con los 
+obtenidos experimentalmente, sino que predecían lo que se conoce como la 
+\emph{catástrofe ultravioleta}: las emisiones correspondientes a altas 
+frecuencias debían aportar una enorme cantidad de energía, por lo que la 
+energía total emitida por el cuerpo negro tendía a infinito.
+Esto violaba los postulados de la conservación de la energía, poniendo en 
+jaque la física clásica conocida hasta el momento.
+
+Planck (1900) se vio forzado a introducir la hipótesis del quantum de 
+energía, es decir, asignarle a cada onda electromagnética niveles de 
+energías discretos, resolviendo el problema de la \emph{catástrofe 
+ultravioleta} y concibiendo uno de los trabajos pioneros en lo que hoy 
+conocemos como la mecánica cuántica.
+
+En 1924, Bose modela la radiación dentro de la cavidad como un gas de 
+fotones, y junto a los trabajos de Einstein (1924 y 1925) de reformulación y 
+generalización de esta teoría, dan nacimiento a lo que hoy conocemos como la 
+\emph{estadística de Bose-Einstein}.
+
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+     \item{Consideremos un gas de fotones dentro de una caja de volumen $V$.
+           La energía de cada fotón puede escribirse como:
+           $$ \epsilon = \hbar \omega = c p , $$
+           mientras que los autovalores de los momentos de cada fotón puede 
+           escribirse como:
+           $$
+           p^2 = \frac{\pi^2 \hbar^2}{V^{2/3}}
+           \left( n_x^2 + n_y^2 + n_z^2 \right), \quad
+           n_x, n_y, n_z = 1, 2, 3, \dots .
+           $$
+           La energía de los fotones se debe a su propia naturaleza, mientras 
+           que la discretización de los niveles de energía viene dada por 
+           las condiciones de contorno en las paredes de la cavidad.
+           Obtener la fórmula de Planck: la energía por unidad de volumen 
+           emitida por fotones con frecuencia entre $\omega$ y $\omega$ + 
+           d$\omega$:
+           $$
+           u(\omega, T)d\omega = \frac{\hbar}{\pi^2 c^3}
+           \frac{\omega^3}{e^{\beta \hbar \omega} - 1} d\omega
+           $$
+           Esta expresión se conoce como la \emph{densidad espectral} del 
+           cuerpo negro.
+           }
+
+     {\small
+     \textbf{Ayuda:}
+     El número de fotones $N$ dentro de la cavidad no es constante, ya que 
+     son absorbidos y emitidos por las paredes internas.
+     Sin embargo, si consideramos al sistema (cavidad + fotones) como aislado, 
+     la entropía debe maximizarse:
+     $$
+     \left( \frac{\partial S}{\partial N} \right)_{E, V} =
+     - \frac{\mu}{T} = 0 \quad \Rightarrow \quad \mu = 0.
+     $$
+     Por ende, podemos considerar que el gas de fotones posee potencial 
+     químico nulo.
+     }
+     
+     \item{Demostrar que en el límite de bajas frecuencias la fórmula de 
+           Planck puede aproximarse por la distribución de Rayleigh-Jeans:
+           $$ u(\omega, T) \propto \omega^2, $$
+           o bien por la distribución de Wien:
+           $$ u(\omega, T) \propto \omega^3 e^{\beta \hbar \omega}. $$
+           Realizar una gráfica de las tres distribuciones (la de Planck, la 
+           de Rayleigh-Jeans y la de Wien) en función de la frecuencia 
+           $\omega$.
+           Interpretar qué distribuciones predicen la catástrofe 
+           ultravioleta y cuáles no.
+           }
+     
+     \item{Calcular la ley de Stefan-Boltzmann a partir de la distribución 
+           de Planck, es decir, demostrar que el valor medio de la energía 
+           por unidad de volumen puede calcularse como:
+           $$ U(T) = 4 \frac{\sigma}{c} T^4, $$
+           determinar la \emph{constante de Stefan-Boltzmann} ($\sigma$) y su 
+           valor.
+           }
+     
+     \item{Calcular la presión de radiación, es decir, la presión que 
+           ejerce el gas de fotones en las paredes internas de la cavidad, y 
+           expresarla en función del valor medio de la energía por unidad de 
+           volumen $U(T)$.
+           }
+
+\end{enumerate}
+
 \end{document}
 
