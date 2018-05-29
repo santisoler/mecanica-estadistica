@@ -10,7 +10,16 @@
 \usepackage{subcaption}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{wrapfig}
 
+\hypersetup{colorlinks,%
+            citecolor=black,%
+            filecolor=black,%
+            linkcolor=black,%
+            urlcolor=black,%
+            pdftex}
+\urlstyle{same}                 % hyperlinks
 
 \titleformat{\section}
   {\bf}{Problema \thesection.}{0.5em}{}
@@ -344,13 +353,24 @@ principios del Siglo XX.
 Un cuerpo negro es aquel que es capaz de absorber toda la radiación 
 electromagnética que incide sobre él.
 Un modelo válido del mismo consiste en una cavidad de volumen $V$ con un 
-pequeño orificio a través del cual ingresa radiación electromagnética, 
-que luego es absorbida y emitida por las paredes internas de la cavidad.
+pequeño orificio a través del cual ingresa radiación electromagnética, que 
+luego es absorbida y emitida por las paredes internas de la cavidad (ver 
+Figura \ref{fig:cuerpo-negro}).
 La radiación electromagnética ingresada por la cavidad posee 
 probabilidades casi nulas de salir a través de la misma, por lo tanto podemos 
 considerar que la cavidad absorbe toda la radiación electromagnética que 
 ingresa, manteniendo en equilibrio termodinámico las paredes y la radiación 
 contenida.
+
+\begin{figure}[b!]
+\centering
+\includegraphics[width=0.5\linewidth]{figs/cuerpo-negro.pdf}
+\caption{Modelo de Cuerpo Negro como una cavidad con un pequeño orificio a 
+         través del cual ingresa la radiación electromagnética
+         (\url{https://en.wikipedia.org/wiki/File:Black_body_realization.svg}).
+         }
+\label{fig:cuerpo-negro}
+\end{figure}
 
 La física clásica de finales del Siglo XIX proponía modelar el cuerpo negro 
 como un conjunto de ondas electromagnéticas estacionarias dentro de la 
