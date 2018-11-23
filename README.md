@@ -30,26 +30,26 @@ Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
 
 ### Otras áreas complementarias:
 * **Termodinámica:** Zemansky y Dittman, *Heat and Thermodynamics*
-* **Mecánica Cuántica:** Cohen-Tannoudji,‎ Diu and Laloe, *Quantum Mechanics*
+* **Mecánica Cuántica:** Cohen-Tannoudji, Diu and Laloe, *Quantum Mechanics*
 
 ### Apuntes y otros materiales
-* N.P. Vásquez, [**Mecánica Estadística: una introducción**][vazquez], Universidad de Los Andes, Mérida, Venezuela, 2002
+* N.P. Vásquez, [**Mecánica Estadística: una introducción**][vasquez], Universidad de Los Andes, Mérida, Venezuela, 2002
 
 
 ## Recursos
 
-A lo largo de las prácticas será necesario realizar gráficas, resolver 
+A lo largo de las prácticas será necesario realizar gráficas, resolver
 límites, integrales y derivadas de manera analítica, etc.
-Para ello recomendamos utilizar el sistema de álgebra computacional 
-[Maxima](http://maxima.sourceforge.net/), o bien una de las versiones del 
+Para ello recomendamos utilizar el sistema de álgebra computacional
+[Maxima](http://maxima.sourceforge.net/), o bien una de las versiones del
 mismo con interfaz gráfica: [wxMaxima](https://andrejv.github.io/wxmaxima/).
 Ambos programas son
-[Software Libre](https://es.wikipedia.org/wiki/Software_libre) y pueden ser 
+[Software Libre](https://es.wikipedia.org/wiki/Software_libre) y pueden ser
 sencillamente instalados.
 
 ### Ubuntu y Debian
 
-Para instalar wxMaxima bajo Ubuntu, Debian y distribuciones derivadas de ellas 
+Para instalar wxMaxima bajo Ubuntu, Debian y distribuciones derivadas de ellas
 primero actualizaremos la lista de repositorios con:
 
     sudo apt-get update
@@ -60,7 +60,7 @@ Y luego procedemos a instalar wxMaxima:
 
 ### Windows y otras distribuciones de GNU/Linux
 
-[Aquí](https://andrejv.github.io/wxmaxima/download.html) encontrarán links 
+[Aquí](https://andrejv.github.io/wxmaxima/download.html) encontrarán links
 de descarga para la versión de Windows.
 
 Para otras distribuciones de GNU/Linux recomendamos buscar el paquete
@@ -83,4 +83,4 @@ licencia [Creative Commons Attribution-ShareAlike 4.0 International License][cc-
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 [cowan-google-books]: https://books.google.com.ar/books?id=Cs42DwAAQBAJ&pg=PA1&source=gbs_toc_r&cad=4#v=onepage&q&f=false
-[vazquez]: http://webdelprofesor.ula.ve/ciencias/pantoja/documents/estadistica.pdf
+[vasquez]: http://webdelprofesor.ula.ve/ciencias/pantoja/documents/estadistica.pdf
