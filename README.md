@@ -25,7 +25,7 @@ Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
 * R.K. Pathria, **Statistical Mechanics**, Second Edition, Butterworth Heinemann, 1996
 * G. Zgrablich, **Elementos de Mecánica Estadística**, Ed. UAM. México, 2009
 * T. Hill, **An Introduction to Statistical Thermodynamics**, Dover
-* B. Cowan, [**Topics in Statistical Mechanics**][cowan-google-books], Imperial College Press, 2005
+* B. Cowan, **Topics in Statistical Mechanics**, Imperial College Press, 2005
 * C. Kittel, **Introduction to Solid State Physics**, Wiley & Sons
 
 ### Otras áreas complementarias:
