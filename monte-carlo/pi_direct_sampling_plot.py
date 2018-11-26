@@ -9,7 +9,7 @@ x_outside, y_outside = [], []
 for step in range(total_pebbles):
     x, y = np.random.uniform(low=-1, high=1, size=2)
     distance_sq = x**2 + y**2
-    if distance_sq <= 1:
+    if distance_sq < 1:
         x_inside.append(x)
         y_inside.append(y)
     else:
