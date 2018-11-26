@@ -27,7 +27,7 @@ ax2.set_axis_off()
 inside_points = 0
 pi_values = []
 for current_pebbles in range(1, total_pebbles + 1):
-    x, y = 2 * np.random.rand(2) - 1
+    x, y = np.random.uniform(low=-1, high=1, size=2)
     distance_sq = x**2 + y**2
     if distance_sq <= 1:
         color = "C0"
