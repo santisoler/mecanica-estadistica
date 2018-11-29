@@ -1,4 +1,4 @@
-# Mecánica Estadística 2018
+# Mecánica Estadística 2019
 
 [![Website][website-shield]][website]
 [![Travis CI][travis-shield]][travis-ci]
