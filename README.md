@@ -12,23 +12,34 @@ cátedra.
 ## Prácticas
 
 Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
+
 * [Repaso de Termodinámica](https://github.com/santis19/mecanica-estadistica/releases/download/0.4.4/repaso-termodinamica.pdf)
 * [Práctica 1: Colectivo Microcanónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.4.4/practica1.pdf)
 * [Práctica 2: Colectivo Canónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.4.4/practica2.pdf)
 * [Práctica 3: Colectivo Macrocanónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.4.4/practica3.pdf)
 * [Práctica 4: Gases Cuánticos](https://github.com/santis19/mecanica-estadistica/releases/download/0.4.4/practica4.pdf)
 
+
 ## Bibliografía
+
 ### Mecánica Estadística:
-* F. Reif, **Fundamentals of Statistical and Thermal Physics**, McGraw-Hill
-* J. Ortín y J. M. Sancho, **Curso de Física Estadística**, Ed. Universidad de Barcelona
-* R.K. Pathria, **Statistical Mechanics**, Second Edition, Butterworth Heinemann, 1996
-* G. Zgrablich, **Elementos de Mecánica Estadística**, Ed. UAM. México, 2009
-* T. Hill, **An Introduction to Statistical Thermodynamics**, Dover
-* B. Cowan, **Topics in Statistical Mechanics**, Imperial College Press, 2005
-* C. Kittel, **Introduction to Solid State Physics**, Wiley & Sons
+
+* J. Ortín y J. M. Sancho. **Curso de Física Estadística**.  Ed. Universidad de Barcelona.
+* B. Cowan. **Topics in Statistical Mechanics**.  Imperial College Press, 2005.
+* R.K. Pathria. **Statistical Mechanics**. Second edition.  Butterworth Heinemann. 1997.
+* D. Landau and K. Binder.  **A Guide to Monte Carlo Simulations in Statistical Physics**.  Cambridge, 2015.
+* W. Krauth. **Statistical Mechanics: Algorithms and Computations**.  Oxford University Press. 2006.
+* F. Reif. **Fundamentos de Física Estadística y Térmica**. McGraw-Hill.
+* G. Zgrablich. **Elementos de Mecánica Estadística**.  Ed. UAM, México. 2009.
+* L. Landau y E. Lifshitz. **Física Estadística**. Reverté.
+* D. McQuarrie. **Statistical Thermodynamics**. University Science Books.
+* T. Hill. **An Introduction to Statistical Thermodynamics**. Dover.
+* G. Wannier. **Statistical Physics**. Dover.
+* K. Binder. **Monte Carlo Methods in Statistical Physics**. Springer, 1979.
+* V.P. Zhdanov. **Elementary Physicochemical Processes on Solid Surface**.  Plenum Press, 1991.
 
 ### Otras áreas complementarias:
+
 * **Termodinámica:** Zemansky y Dittman, *Heat and Thermodynamics*
 * **Mecánica Cuántica:** Cohen-Tannoudji, Diu and Laloe, *Quantum Mechanics*
 
