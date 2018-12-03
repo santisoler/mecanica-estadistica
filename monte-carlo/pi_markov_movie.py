@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, Rectangle
 
 
-movie_dir = "markov_pi_movie"
+movie_dir = "_markov_pi_movie"
 if not os.path.isdir(movie_dir):
     os.makedirs(movie_dir)
 

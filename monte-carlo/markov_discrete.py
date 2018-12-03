@@ -18,7 +18,7 @@ def new_step(x, y):
         return x, y
 
 
-movie_dir = "markov_discrete"
+movie_dir = "_markov_discrete"
 if not os.path.isdir(movie_dir):
     os.makedirs(movie_dir)
 

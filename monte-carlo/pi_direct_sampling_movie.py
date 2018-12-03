@@ -7,7 +7,7 @@ from matplotlib.patches import Circle, Rectangle
 total_pebbles = 200
 np.random.seed(12345)
 
-movie_dir = "pebbles_movie"
+movie_dir = "_pebbles_movie"
 if not os.path.isdir(movie_dir):
     os.makedirs(movie_dir)
 
