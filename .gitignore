@@ -1,5 +1,6 @@
 */output
 _build
+_*
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
