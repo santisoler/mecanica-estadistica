@@ -1,14 +1,17 @@
-TARGETS = practica1 practica2 practica3 practica4 repaso-termodinamica
+TARGETS = $(subst /,,$(subst ./,,$(dir $(shell find . -maxdepth 2 -name '*.tex'))))
+OUTPUT = _build
+TARGETS_OUTPUT = _output
+PDFS = $(addprefix $(OUTPUT)/, $(addsuffix .pdf, $(TARGETS)))
 
-all: _build/$(TARGETS)
+all: $(PDFS)
 
-_build/$(TARGETS): _build
-		$(foreach target, $(TARGETS), make -C $(target);)
-		$(foreach target, $(TARGETS), mv $(target)/output/*.pdf _build;)
+$(OUTPUT)/%.pdf: % | $(OUTPUT)/
+	make -C $<
+	mv $</$(TARGETS_OUTPUT)/$<.pdf $(OUTPUT)
 
-_build:
-		mkdir _build
+$(OUTPUT)/:
+	mkdir $(OUTPUT)
 
 clean:
-		$(foreach target, $(TARGETS), make -C $(target) clean;)
-		rm -r _build
+	$(foreach target, $(TARGETS), make -C $(target) clean;)
+	rm -r $(OUTPUT)
