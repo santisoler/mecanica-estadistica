@@ -1,23 +1,27 @@
-PROJECT = practica2
-LATEX_FLAGS  = -halt-on-error -output-directory $(OUTPUT)/
-OUTPUT = output
-PDFVIEWER = evince
+# All tex files in the working directory
+TEX_FILES = $(shell find . -maxdepth 1 -name '*.tex')
+
+# Output directory name
+OUTPUT = _output
+
+# Output PDF files
+PDFS = $(addprefix $(OUTPUT)/, $(TEX_FILES:.tex=.pdf))
+
+LATEX_COMPILER = latexmk
+LATEX_FLAGS = -pdf -outdir=$(OUTPUT)
+PDFVIEWER = xdg-open
 
 
-all: $(PROJECT).tex
+all: $(PDFS)
 
 clean:
 	rm -rf $(OUTPUT)
 
 show: all
-	@ ( $(PDFVIEWER) $(OUTPUT)/$(PROJECT).pdf > /dev/null 2>&1 & )
+	@ ( $(foreach PDF,$(PDFS),$(PDFVIEWER) $(PDF) 2> /dev/null;) )
 
-
-$(PROJECT).tex: $(PROJECT).aux
-	pdflatex $(LATEX_FLAGS) $(PROJECT).tex
-
-$(PROJECT).aux: $(OUTPUT)/
-	pdflatex $(LATEX_FLAGS) $(PROJECT).tex
+$(OUTPUT)/%.pdf: %.tex | $(OUTPUT)/
+	$(LATEX_COMPILER) $(LATEX_FLAGS) $<
 
 $(OUTPUT)/:
 	mkdir $(OUTPUT)
