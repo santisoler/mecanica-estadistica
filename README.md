@@ -13,11 +13,11 @@ cátedra.
 
 Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
 
-* [Repaso de Termodinámica](https://github.com/santis19/mecanica-estadistica/releases/download/0.4.4/repaso-termodinamica.pdf)
-* [Práctica 1: Colectivo Microcanónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.4.4/practica1.pdf)
-* [Práctica 2: Colectivo Canónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.4.4/practica2.pdf)
-* [Práctica 3: Colectivo Macrocanónico](https://github.com/santis19/mecanica-estadistica/releases/download/0.4.4/practica3.pdf)
-* [Práctica 4: Gases Cuánticos](https://github.com/santis19/mecanica-estadistica/releases/download/0.4.4/practica4.pdf)
+* [Repaso de Termodinámica](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/repaso-termodinamica.pdf)
+* [Práctica 1: Colectivo Microcanónico](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica1.pdf)
+* [Práctica 2: Colectivo Canónico](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica2.pdf)
+* [Práctica 3: Colectivo Macrocanónico](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica3.pdf)
+* [Práctica 4: Gases Cuánticos](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica4.pdf)
 
 
 ## Bibliografía
@@ -97,10 +97,10 @@ licencia [Creative Commons Attribution-ShareAlike 4.0 International License][cc-
 
 [![CreativeCommons][cc-by-sa-image]][cc-by-sa]
 
-[website]: https://santis19.github.io/mecanica-estadistica
+[website]: https://santisoler.github.io/mecanica-estadistica
 [website-shield]: https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=my-website
-[travis-ci]: https://travis-ci.org/santis19/mecanica-estadistica/builds
-[travis-shield]: https://img.shields.io/travis/santis19/mecanica-estadistica/master.svg
+[travis-ci]: https://travis-ci.org/santisoler/mecanica-estadistica/builds
+[travis-shield]: https://img.shields.io/travis/santisoler/mecanica-estadistica/master.svg
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
