@@ -13,11 +13,11 @@ cátedra.
 
 Aquí iremos subiendo las prácticas de la materia a medida que estén listas:
 
-* [Repaso de Termodinámica](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/repaso-termodinamica.pdf)
-* [Práctica 1: Colectivo Microcanónico](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica1.pdf)
-* [Práctica 2: Colectivo Canónico](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica2.pdf)
-* [Práctica 3: Colectivo Macrocanónico](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica3.pdf)
-* [Práctica 4: Gases Cuánticos](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica4.pdf)
+* [Repaso de Termodinámica](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/repaso-termodinamica.pdf)  :x:
+* [Práctica 1: Colectivo Microcanónico](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica1.pdf) :x:
+* [Práctica 2: Colectivo Canónico](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica2.pdf)      :x:
+* [Práctica 3: Colectivo Macrocanónico](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica3.pdf) :x:
+* [Práctica 4: Gases Cuánticos](https://github.com/santisoler/mecanica-estadistica/releases/download/0.4.4/practica4.pdf)         :x:
 
 
 ## Bibliografía
