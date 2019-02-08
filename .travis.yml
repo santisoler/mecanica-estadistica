@@ -13,7 +13,7 @@ deploy:
     - _build/practica2.pdf
     - _build/practica3.pdf
     - _build/practica4.pdf
-    - _build/repaso-termodinamica.pdf
+    - _build/practica5.pdf
   skip_cleanup: true
   on:
     tags: true
