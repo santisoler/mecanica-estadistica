@@ -47,15 +47,15 @@
 % ----------
 \section{}
 
- Suponiendo que la entropía $S$ y la cantidad de microestados
+Suponiendo que la entropía $S$ y la cantidad de microestados
 $\Omega$ de un sistema físico están relacionadas por una función
 arbitraria $f$ tal que:
-~
+
 $$ S = f(\Omega), $$
-~
+
 \noindent demuestre que el carácter extensivo de $S$ y el multiplicativo de
 $\Omega$ necesariamente requieren que $f$ sea de la forma:
-~
+
 $$ S = k \ln \Omega $$
 
 
@@ -65,16 +65,34 @@ $$ S = k \ln \Omega $$
 Mostrar que $\ln N! = \sum_{n=0}^N \ln n$.
 Aproximando esta suma por una integral, obtener la aproximación de
 Stirling:
-~
+
 $$ \ln N! \simeq N \ln N - N $$
 
+
+\section{}
+
+Considere un sistema compuesto por $N$ partículas no interactuantes que pueden ocupar
+dos estados con energías 0 y $\epsilon$.
+Si hallamos a dicho sistema en el macroestado $(N, E)$, halle:
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{la cantidad de microestados $\Omega(N, E)$ en función de $n$,}
+
+    \item{la entropía del sistema en función de $E$,}
+
+    \item{la temperatura de equilibrio del sistema.}
+
+\end{enumerate}
 
 
 \section{Defectos Puntuales en Redes Cristalinas}
 
 Los átomos que conforman un sólido cristalino se encuentran
 dispuestos en los vértices de una red regular (conocida como red
-cristalina) de manera compacta (Fig. \ref{fig:nacl}).
+cristalina) de manera compacta (Fig.~\ref{fig:nacl}).
 Sin embargo, a temperaturas distintas de cero, las redes cristalinas
 puede presentar defectos que rompen esa regularidad, los cuales se
 clasifican según su geometría: defectos puntuales, lineales o
@@ -83,16 +101,16 @@ tridimensionales.
 Dentro de los defectos puntuales podemos hallar las \emph{vacantes de
 Schottky}, las cuales consisten en que algunos átomos abandonen su
 posición en la red (dejando una vacante o vacío en su lugar) y migren
-hacia la superficie (Fig. \ref{fig:schottky}); y los \emph{intersticios
+hacia la superficie (Fig.~\ref{fig:schottky}); y los \emph{intersticios
 de Frenkel}, en cuyo caso los átomos migran a posiciones intersticiales
-de la red (Fig. \ref{fig:frenkel}).
+de la red (Fig.~\ref{fig:frenkel}).
 
 
 \vspace{1em}
 \textbf{Vacantes de Schottky}
 \vspace{0.5em}
 
-Consideremos un cristal aislado ($E = $ cte) compuesto por $N$ átomos
+Consideremos un cristal aislado ($E = $~cte) compuesto por $N$ átomos
 que presenta $n$ vacantes de Schottky.
 Si suponemos que cada defecto conlleva un coste energético $\epsilon$:
 
@@ -104,13 +122,11 @@ Si suponemos que cada defecto conlleva un coste energético $\epsilon$:
         \caption{Red Cristalina de NaCl}
         \label{fig:nacl}
     \end{subfigure}
-    ~
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[width=\textwidth]{figs/schottky.png}
         \caption{Vacantes de Schottky}
         \label{fig:schottky}
     \end{subfigure}
-    ~
     \begin{subfigure}[b]{0.27\textwidth}
         \includegraphics[width=\textwidth]{figs/frenkel.png}
         \caption{Intersticios de Frenkel}
@@ -164,10 +180,9 @@ Si suponemos que cada defecto conlleva un coste energético $\epsilon$:
 \textbf{Intersticios de Frenkel}
 \vspace{0.5em}
 
-Responder los puntos \ref{item:schottky-microestados},
-\ref{item:schottky-entropia} y \ref{item:schottky-defectos} del
-ejercicio anterior considerando el mismo cristal, pero que ahora
-presenta $n$ átomos situados en sitios intersticiales (solo defectos de
+Responder los puntos~\ref{item:schottky-microestados},~\ref{item:schottky-entropia}
+y~\ref{item:schottky-defectos} del ejercicio anterior considerando el mismo cristal,
+pero que ahora presenta $n$ átomos situados en sitios intersticiales (solo defectos de
 Frenkel).
 
 \vspace{0.5em}
@@ -220,7 +235,7 @@ magnético'' es un sistema aislado, es decir, $E = -
           Usando la relación
           $\frac{1}{T} = \left( \frac{\partial S}{\partial E} \right)_V$,
           hallar la ecuación de estado de los paramagnetos:
-          $$ M = N \mu_B \tanh \left( \frac{\mu_B H}{k_B T} \right) $$.
+          $$ M = N \mu_B \tanh \left( \frac{\mu_B H}{k_B T} \right).$$
           }
 
     \item{\label{item:paramagneto-grafica}
@@ -241,11 +256,11 @@ magnético'' es un sistema aislado, es decir, $E = -
           inversamente proporcional a la temperatura:
           $$ M \propto \frac{H}{T} $$
           Determinar el rango de validez de la Ley de Curie a partir de la
-          gráfica realizada en \ref{item:paramagneto-grafica}
+          gráfica realizada en~\ref{item:paramagneto-grafica}
           (¿altas o bajas temperaturas?).\\
           Obtener la Ley de Curie a partir de un desarrollo en series
-          de Taylor de la magnetización obtenida en
-          \ref{item:paramagneto-magnetizacion}.
+          de Taylor de la magnetización obtenida
+          en~\ref{item:paramagneto-magnetizacion}.
           }
 
     \item{Si consideramos un paramagneto compuesto por $N = 10^{24}$
