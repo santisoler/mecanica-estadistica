@@ -1,5 +1,6 @@
 before_install:
-- "sudo apt-get update && sudo apt-get install --no-install-recommends latexmk texlive-latex-base texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-lang-spanish dvipng"
+- sudo apt-get update
+- sudo apt-get install --no-install-recommends latexmk texlive-latex-base texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-lang-spanish dvipng
 
 script:
 - make
