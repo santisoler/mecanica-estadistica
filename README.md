@@ -109,8 +109,8 @@ licencia [Creative Commons Attribution-ShareAlike 4.0 International License][cc-
 [vasquez]: http://webdelprofesor.ula.ve/ciencias/pantoja/documents/estadistica.pdf
 
 <!--Urls a practicas-->
-[practica1]: https://github.com/santisoler/mecanica-estadistica/releases/download/2019-draft-02/practica1.pdf
-[practica2]: https://github.com/santisoler/mecanica-estadistica/releases/download/2019-draft-02/practica2.pdf
-[practica3]: https://github.com/santisoler/mecanica-estadistica/releases/download/2019-draft-02/practica3.pdf
-[practica4]: https://github.com/santisoler/mecanica-estadistica/releases/download/2019-draft-02/practica4.pdf
-[practica5]: https://github.com/santisoler/mecanica-estadistica/releases/download/2019-draft-02/practica5.pdf
+[practica1]: https://github.com/santisoler/mecanica-estadistica/releases/download/2019-draft-03/practica1.pdf
+[practica2]: https://github.com/santisoler/mecanica-estadistica/releases/download/2019-draft-03/practica2.pdf
+[practica3]: https://github.com/santisoler/mecanica-estadistica/releases/download/2019-draft-03/practica3.pdf
+[practica4]: https://github.com/santisoler/mecanica-estadistica/releases/download/2019-draft-03/practica4.pdf
+[practica5]: https://github.com/santisoler/mecanica-estadistica/releases/download/2019-draft-03/practica5.pdf
