@@ -37,7 +37,7 @@
 \begin{center}
     \textbf{\large
         Mecánica Estadística \\
-        Práctica 3 - Colectivo Macrocanónico
+        Práctica 3 - Colectividad Canónica
     }
 \end{center}
 \vspace{-1.5em}
@@ -47,139 +47,487 @@
 % Excersises
 % ----------
 
-\section{Adsorción}
-
-Consideremos un sólido que se encuentra en equilibrio termodinámico con un 
-gas encerrado en un volumen $V$.
-La superficie del sólido posee $M$ vacancias que permiten que las partículas 
-del gas sean adsorbidas. Vamos a suponer que cada partícula del gas que se 
-sitúa en una vacancia posee una energía $-\epsilon_0$ con respecto a la mínima 
-que tendría si perteneciese al gas.
+\section{Factorización de la Función de Partición}
 
 \begin{enumerate}[label=(\alph*),
                   leftmargin=2\parindent,
                   rightmargin=2\parindent]
 
-    \item{Determinar la función de partición macrocanónica de las 
-          partículas que son adsorbidas por la superficie del sólido.}
+    \item{Dado un sistema compuesto por dos subsistemas no interactuantes entre sí,
+          demuestre que la función de partición del gran sistema se puede expresar
+          como el producto de las funciones de particiones de cada subsistema:
+          $$ Z(N, V, T) = Z_A(N, V, T) Z_B(N, V, T) $$
+          }
 
-    {\small
-    \textbf{Ayuda:}
-    El teorema del binomio enuncia que dados $p$ y $q$ números reales y $n$ un
-    natural, la $n$-ésima potencia del binomio de $p$ y $q$ puede expresarse
-    de la siguiente manera:
-    $$ (p + q)^n = \sum_{k=0}^n \frac{n!}{(n-k)! \, k!} \, p^k q^{n-k} $$
-    }
-
-    \item{\label{item:cubrimiento}
-          Calcular la cantidad de partículas adsorbidas $N_0$ en función de 
-          $T$ y $\mu$.
-          Definamos el \emph{cubrimiento} de la superficie del sólido como 
-          $\theta = N_0/M$, es decir, la cantidad de partículas adsorbidas 
-          sobre la cantidad de sitios en la superficie.
-          Grafique $\theta$ en función de $x = (\epsilon_0 + \mu)/kT$, para 
-          valores de $x$ tanto positivos como negativos, ya que el potencial 
-          químico $\mu$ puede ser tanto positivo como negativo.}
-    
-    \item{Demostrar que el potencial químico puede escribirse 
-          como:
-          $$
-          \mu =
-          k_B T \ln \left( \frac{\theta}{1 - \theta} \right) - \epsilon_0.
-          $$
+    \item{Dado un sistema compuesto por $N$ partículas no interactuantes, demostrar que
+          su función de partición puede ser factorizada entre la función de partición
+          de cada partícula:
+          $$ Z(N, V, T) = [Z_1(V, T)]^N $$
           }
-    
-    \item{Modelice el gas como un gas ideal en el colectivo macrocanónico.
-          Determine el valor medio de la cantidad de partículas en el gas y 
-          despejar de la expresión obtenida el potencial químico del gas.
-          }
-    
-    \item{Dado que el gas y el sólido se encuentran en equilibrio 
-          termodinámico, los potenciales químicos de ambos son iguales. 
-          Demuestre que la presión de equilibrio del gas puede escribirse 
-          como:
-          $$ P = \frac{\theta}{1 - \theta} f(T), $$
-          donde $f(T)$ es una función de la temperatura.
-          }
-    
-    \item{Si consideramos que el gas posee una densidad muy baja, el volumen 
-          medio por partícula es mucho mayor que la longitud de onda térmica 
-          de De Broglie, por ende:
-          $$ \lambda^3 \frac{N}{V} \ll 1, $$
-          donde $N$ es la cantidad de partículas en el gas.
-          Determine el signo del potencial químico del gas e interprete la 
-          gráfica realizada en el item \ref{item:cubrimiento}. }
 
 \end{enumerate}
 
 
+\section{Gas ideal clásico}
+\label{sec:gas-ideal}
 
-\section{Variación de la presión atmosférica con la altitud}
+La forma más sencilla de modelizar un gas real es el \emph{gas ideal
+clásico}, el cual consiste en considerar un conjunto de $N$ partículas
+puntuales cuyas únicas interacciones son colisiones
+perfectamente elásticas.
+El caracter clásico del modelo hace referencia a que la dinámica de
+las $N$ partículas puede ser abordada desde la mecánica clásica.
 
-Consideremos un modelo aproximado de la atmósfera dividiendo una 
-columna vertical en múltiples capas, donde cada una contiene partículas 
-de un gas ideal que se encuentran en equilibrio térmico y difusivo con 
-las capas vecinas. Además, por encontrarse en cercanía de la superficie 
-de la Tierra, cada partícula se encuentra sometida al potencial 
-gravitatorio que esta genera.
+En este problema vamos a considerar un gas ideal dentro de un
+recipiente de volumen $V$ y en contacto con un baño térmico de
+temperatura $T$, de tal manera que el recipiente permite intercambiar
+energía con el baño, y el sistema ``baño + recipiente'' se encuentra
+aislado.
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{\label{item:gas-ideal-particion}
+          Si todas las partículas del gas poseen la misma masa $m$,
+          mostrar que la función de partición del gas ideal puede ser:
+          $$ Z(N, T, V) = V^N \left[ 2\pi m k_B T \right]^{3N/2} $$
+          }
+
+    \item{Calcular la energía libre de Helmholtz y deducir la ecuación de
+          estado del gas ideal:
+          $$ pV = N k_B T $$
+          }
+
+    \item{Calcular el valor medio de la energía del sistema y
+          verificar si se cumple el teorema de equipartición.
+          }
+
+    \item{Calcular la entropía y los calores específicos $C_V$ y $C_p$.
+          }
+
+    \item{¿Es la entropía obtenida en el punto anterior una propiedad
+          extensiva?
+          }
+
+    {\small
+    \textbf{Ayuda:} Verificar que la suma de las entropías de dos
+    gases $A$ y $B$ es igual a la entropía del sistema $A + B$.
+    }
+
+\end{enumerate}
+
+
+\section{Longitud de onda de de Broglie}
+\label{sec:de-broglie}
+
+Consideremos el gas ideal clásico del Problema \ref{sec:gas-ideal} y
+repensemos el modelo de partículas clásicas no interactuantes. Para que esta
+simplificación sea válida es necesario basarnos en la hipótesis de que las
+partículas del gas se encuentran a una distancia suficientemente grande en la
+que las funciones de onda de cada una de ellas no se superpone con las del
+resto, es decir, a una distancia en la cual podemos obviar la coherencia
+cuántica.
+
+Al calcular la función de partición hemos integrado el factor
+$e^{-\beta E}$ en el espacio de las fases. Sin embargo no hemos tenido
+en cuenta un concepto de la mecánica cuántica: el principio de
+incertidumbre de Heisenberg. El mismo dicta que nos es imposible medir
+con precisión ciertos pares de magnitudes físicas de un sistema
+cuántico, por ejemplo, la posición y el momento. Este principio se
+puede resumir en:
+$$ \Delta x \Delta p \gtrsim  h$$
+donde $\Delta x$ y $\Delta p$ son las incertidumbres en la medición de
+la posición y el momento de una particula, respectivamente; y $h$ es
+la constante de Planck.
+De esta manera, podríamos pensar que a la hora de integrar en las
+coordenadas del espacio de las fases es necesario dividir por el
+``mínimo volumen'' que puede ocupar cada microestado
+$\{ q_1, \dots q_N, p_1, \dots p_N \}$, es decir, $h^{3N}$.
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{\label{item:de-broglie-particion}
+          Obtener la función de partición a partir de la siguiente
+          integral:
+          $$
+          Z(N, T, V) =
+            \frac{1}{h^{3N} N!}
+            \int_D e^{-\beta E(\{q, p\})} d^{3N}q \,\, d^{3N}p
+          $$
+          }
+
+    \item{Definimos a la longitud de onda térmica de de Broglie como:
+          $$ \lambda = \left( \frac{h^2}{2\pi m k_B T} \right)^{1/2} $$
+          Expresar la función de partición obtenida en el punto
+          anterior en función de $\lambda$.
+          }
+
+    \item{La longitud de onda de de Broglie se puede considerar como la
+          longitud característica a partir de la cual la coherencia
+          cuántica comienza a tener relevancia.\\
+          Obtener una expresión para la distancia media de las
+          partículas ($l$). ¿Cómo deberíamos considerar a las
+          partículas si $\lambda/l \ll 1$? ¿y en el caso contrario?
+          }
+
+\end{enumerate}
+
+
+\section{Paradoja de Gibbs}
+
+Consideremos un sistema aislado compuesto por dos gases $A$ y $B$ en
+equilibrio térmico que se encuentran separados por un tabique que
+permite intercambiar energía entre ellos.
+Los subsistemas $A$ y $B$ constan de $N_A$ y $N_B$ partículas del mismo
+tipo y volúmenes $V_A$ y $V_B$, respectivamente.
+Luego, retiramos el tabique permitiendo que ambos gases se mezclen.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{figs/paradoja-gibbs-1.png}
+        \caption{Estado inicial del sistema}
+        \label{fig:gibbs-tabique}
+    \end{subfigure}
+    \hspace{0.1\textwidth}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{figs/paradoja-gibbs-2.png}
+        \caption{Estado final del sistema}
+        \label{fig:gibbs-mezcla}
+    \end{subfigure}
+    \caption{Paradoja de Gibbs en mezcla de gases}
+\end{figure}
+
+A partir de un análisis puramente termodinámico podemos afirmar que:
+
+\begin{itemize}
+
+\item{Si ambos gases poseen densidades diferentes
+      $\left( \frac{N_A}{V_A} \neq \frac{N_B}{V_B} \right)$, entonces la
+      mezcla de los gases es un proceso irreversible y por ende
+      $ \Delta S > 0 $.
+      }
+
+\item{Si por el contrario, ambos gases poseen la misma densidad
+      $\left( \frac{N_A}{V_A} = \frac{N_B}{V_B} \right)$, entonces
+      el proceso es reversible y $ \Delta S = 0 $.
+      }
+
+\end{itemize}
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Calcular la diferencia entre la entropía final e inicial del
+          sistema sin aplicar la corrección $1/N!$.
+          Analizar si el signo de la variación de la entropía
+          concuerda con el análisis termodinámico para gases $A$ y $B$ de
+          igual y de distinta densidad.}
+
+    \item{Calcular la misma variación de entropía ahora con la
+          corrección $1/N!$. ¿Dicha corrección resuelve la paradoja
+          de Gibbs?}
+
+\end{enumerate}
+
+
+\section{Gas ideal clásico: Pozo de potencial infinito}
+
+En los problemas anteriores hemos observado que un desarrollo mecánico
+estadístico de gases ideales puramente clásicos posee problemas
+conceptuales que deben resolverse a través de agregados provenientes
+de razonamientos cuánticos.
+Si bien una completa descripción cuántica del mismo involucra
+simetrizaciones de la función de onda (que veremos más adelante), en
+este problema intentaremos incorporar algunos aspectos mecánico
+cuánticos.
+
+Una forma de aproximar un gas ideal es considerarlo como un conjunto de
+$N$ partículas cuánticas no interactuantes, cuya distancia con el resto
+es lo suficientemente grande como para poder obviar la coherencia
+cuántica. Dado que las partículas se encuentran encerradas en un
+recipiente de volumen $V$, podemos considerar a cada partícula inmersa
+en un pozo de potencial infinito de ancho $V^{1/3}$ en cada dirección
+($x, y, z$).
+
+Los niveles energía de una partícula en un pozo de potencial infinito
+unidimensional vienen dados por:
+$$ E_n = \frac{\hbar^2 \pi^2}{2m V^{2/3}} n^2, \quad n=1, 2, 3, \dots $$
+
+\noindent Mientras que la misma partícula en un pozo de potencial infinito
+tridimensional posee el siguiente espectro de energía:
+$$ E_{n_x, n_y, n_z} = \frac{\hbar^2 \pi^2}{2m V^{2/3}} (n_x^2 + n_y^2 + n_z^2),
+\quad n_x, n_y, n_z = 1, 2, 3, \dots $$
+
+
+Además de suponer que las partículas no interactúan entre sí,
+asumiremos que son indistinguibles, lo que nos permite expresar la
+función de partición del sistema como:
+$$ Z(N,T,V) = \frac{1}{N!} [Z_1(T, V)]^N $$
+donde $Z_1$ es la función de partición de una sola partícula.
 
 
 \begin{enumerate}[label=(\alph*),
                   leftmargin=2\parindent,
                   rightmargin=2\parindent]
 
-    \item{Obtener la siguiente expresión para el potencial químico de 
-          una capa ubicada a una altitud $h$:
-          $$ \mu =
-          k_B T \ln \left( \frac{\langle N \rangle \lambda^3}{V} \right)
-          + mgh $$
-          donde $\langle N \rangle$ es el valor medio de la cantidad de 
-          partículas en la capa, $V$ es el volumen de la misma, 
-          $\lambda$ es la longitud de onda de De Broglie, $m$ es la 
-          masa de cada partícula del gas ideal y $g$ es la aceleración 
-          de la gravedad en la cercanías de la superficie terrestre.
+    \item{Calcular la función de partición del sistema.}
+
+    {\small
+    \textbf{Ayuda:} Puede ser necesario aproximar la sumatoria
+    discreta de los estados en una integral del tipo:
+    $$ Z_1(T, V) =
+    \int_0^\infty g(\epsilon) e^{-\epsilon/k_B T} d\epsilon $$
+    donde $g(\epsilon)$ es la densidad de estados, es decir la cantidad de
+    estados con energía entre $\epsilon$ y $\epsilon + d\epsilon$:
+    $$ g(\epsilon) d\epsilon = N(\epsilon + d\epsilon) - N(\epsilon)
+    \quad \Rightarrow \quad g(\epsilon) = \frac{d N(\epsilon)}{d\epsilon} $$
+    donde $N(\epsilon)$ es la cantidad de estados con energía menor o
+    igual a $\epsilon$.
+    }
+
+    \item{Comparar la función de partición obtenida en el punto
+          anterior con la que hemos obtenido en el problema
+          \ref{sec:de-broglie}\ref{item:de-broglie-particion}.
+          Analizar cómo fueron introducidas las constantes de Planck
+          en ambos casos. ¿A qué conclusión podemos arribar acerca
+          de los gases ideales y un modelado puramente clásico de los
+          mismos?
           }
-
-    {\small
-    \textbf{Ayuda:}
-    La función exponencial puede expresarse en desarrollo de serie de 
-    Taylor de la siguiente manera:
-    $$ e^x = \sum_{n=0}^\infty \frac{x^n}{n!} $$
-    Y la longitud de onda de De Broglie se define como:
-    $$ \lambda = \frac{h}{\sqrt{2\pi m k_B T}} $$
-    }
-
-    \item{Obtener la siguiente relación entre la presión atmosférica 
-          en función de la altura $h$:
-          $$ p(h) = p(0) e^{-h/h_c} $$
-          donde $h_c = k_B T / mg$ es una altitud característica.
-          Realizar una gráfica de la presión en función de $h/h_c$.
-          }
-    
-    \item{Interpretar el significado de $h_c$ y calcule su valor si 
-          consideramos una atmósfera a $T = 290 K$ compuesta por 
-          nitrógeno (N$_2$).}
-
-    {\small
-    \textbf{Ayuda:}
-    El peso atómico del Nitrógeno es igual a 14 g/mol.
-    }
-
-    \item{Considerando el valor de $h_c$ obtenido en el punto anterior 
-          y una presión de 101325 Pa en la superficie terrestre,
-          calcular la presión a 3000m.}
-
-    \item{Discuta la validez de la hipótesis de equilibrio térmico 
-          entre las diferentes capas y su relevancia en los resultados 
-          obtenidos en los puntos anteriores.}
-    
-    {\small
-    \textbf{Ayuda:}
-    La temperatura de la atmósfera desciende (en promedio) 6$^\circ$C 
-    por km.
-    }
 
 \end{enumerate}
+
+
+\section{Paramagnetismo de Langevin (clásico)}
+\label{sec:paramagnetismo-langevin}
+
+Como hemos visto en la práctica anterior, un paramagneto regular puede ser
+modelado como un conjunto de $N$ momentos magnéticos situados en los
+nodos de una red cristalina, los cuales interactúan únicamente por el campo
+magnético externo $\textbf{H}$ (y no entre ellos).
+
+En este problema realizaremos un desarrollo puramente clásico del
+paramagneto, considerando que cada momento magnético es un vector de
+módulo $\mu$ que puede orientarse en cualquier dirección dada por los
+ángulos polar y azimutal $\theta$ y $\phi$, respectivamente.
+Si el campo externo $\textbf{H}$ está orientado en la dirección del eje
+$z$, entonces la energía de cada momento magnético viene dada por:
+
+$$ E_i = - \boldsymbol{\mu_i} \cdot \textbf{H} = - \mu H \cos \theta_i $$
+
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Obtener la función de partición del paramagneto.}
+
+    \item{Si definimos como $M$ a la proyección de la magnetización total del
+          sistema en el eje $z$, demostrar que:
+          $$ M(N, H, T) = - \left( \frac{\partial F}{\partial H}
+          \right)_{N, T}$$
+          }
+
+    {\small
+    \textbf{Ayuda:}
+    Partir de la definición de la energía libre de Helmholtz ($ dF = dU
+    - S dT$) y utilizar la expresión de la energía total del
+    paramagneto ($ E = - \textbf{M} \cdot \textbf{H} \simeq - MH$).
+    }
+
+    \item{Obtener una expresión para la magnetización $M$ en función
+          de la temperatura $T$ y realizar una gráfica de la misma.}
+
+    {\small
+    \textbf{Ayuda:} La función de Langevin $L(x)$ se define como:
+    $$ L(x) = \coth x - \frac{1}{x} $$
+    }
+
+    \item{Verificar si la magnetización $M$ responde a la Ley de Curie
+          para altas temperaturas.}
+
+    \item{Otra forma de verificar la Ley de Curie es comprobar que la
+          susceptibilidad magnética
+          $\chi = \left( \frac{\partial M}{\partial H}\right)_{N, T}$
+          es inversamente proporcional a $T$.
+          Calcular la susceptibilidad $\chi$ y comprobar la Ley de
+          Curie en el límite de altas $T$.
+          }
+
+    \item{Calcular el calor específico del paramagneto, graficarlo y
+          analizar sus comportamientos a altas y bajas temperaturas.
+          ¿Este resultado satisface el Tercer Principio de la
+          Termodinámica?}
+
+
+\end{enumerate}
+
+\section{Paramagnetismo de Brillouin}
+
+Abordemos ahora un paramagneto pero desde una perspectiva puramente
+microscópica. Los átomos situados en los nodos de una red cristalina pueden
+presentar electrones sin aparear debido a las Reglas de Hund. Al igual que
+cualquier partícula elemental, los electrones presentan un momento angular
+intrínseco llamado \emph{spin}, causal del momento magnético
+$\boldsymbol{\mu}$.
+Si suponemos que cada momento magnético interactúa únicamente con un
+campo magnético externo $\textbf{H}$ (y no con el resto de los momentos
+magnéticos), el hamiltoniano de cada uno puede escribirse como:
+$$ \hat{\mathcal{H}} =
+- \hat{\boldsymbol{\mu}} \cdot \textbf{H} = - H \hat{\mu_z} $$
+
+Consideremos que cada átomo del paramagneto bajo estudio posee un solo
+electrón sin aparear, por ende el operador $\hat{\mu_z}$ puede
+escribirse como:
+$$ \hat{\mu_z} = \frac{g_s \mu_B}{\hbar} \hat{S_z} $$
+
+donde $\hat{S_z}$ es la componente $z$ del operador spin, $\mu_B$ el
+magnetón de Bohr y $g_s \simeq 2$ el factor $g$ de spin. Ya que los
+autovalores de $\hat{S_z}$ pueden ser $\pm 1/2 \hbar$, los niveles de
+energía disponibles para cada momento magnético son:
+$$ E_{m_s} = - g_s \mu_B H m_s, \quad  m_s = \pm 1/2.$$
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Obtener la función de partición del paramagneto.}
+
+    \item{Obtener una expresión para la magnetización $M$ en función
+          de la temperatura $T$ y realizar una gráfica de la misma.
+          Comparar este modelo con el resuelto en la Práctica 1 a
+          través del Microcanónico.
+          ¿Ambos modelos son equivalentes?
+          ¿Se obtienen los mismos resultados?}
+
+    \item{Verificar si la magnetización $M$ responde a la Ley de Curie
+          para altas temperaturas.}
+
+    \item{Calcular el calor específico del paramagneto, graficarlo y
+          analizar sus comportamientos a altas y bajas temperaturas.
+          Compararlo con el calor específico obtenido en el
+          Problema~ \ref{sec:paramagnetismo-langevin}.
+          ¿A qué conclusión podemos arribar a partir de dicha comparación?
+          }
+
+\end{enumerate}
+
+
+\section{Modelo de Sólido: Osciladores armónicos clásicos}
+\label{sec:oscilador-clasico}
+
+Consideremos el mismo modelo de sólido que propusimos en la Práctica 1:
+un conjunto de $N$ partículas situadas en los nodos de una red
+cristalina que oscilan alrededor de su posición de equilibrio en las 3
+direcciones con la misma frecuencia $\omega$ y de manera independiente.
+
+En este problema realizaremos un modelo puramente clásico del sólido,
+considerándolo como un conjunto de $N$ osciladores armónicos clásicos.
+La energía de cada uno de ellos viene dada por:
+
+$$ E = \frac{1}{2m}(p_x^2 + p_y^2 + p_z^2) +
+       \frac{1}{2} m \omega^2 (x^2 + y^2 + z^2) $$
+
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Calcular la función de partición de los $N$ osciladores.}
+
+    \item{Calcular el calor específico de los mismos y comprobar que a
+          altas temperaturas verifica la Ley de Dulong-Petit
+          ($C_v = 3Nk_B$).}
+
+    \item{¿Verifica este modelo el Tercer Principio de la
+          Termodinámica? ¿A qué conclusión puede arribar con estos
+          resultados?}
+
+\end{enumerate}
+
+
+
+\section{Sólido de Einstein}
+
+Consideremos el mismo modelo de sólido del problema anterior (un
+conjunto de $N$ partículas situadas en los nodos de una red cristalina
+que oscilan alrededor de su posición de equilibrio en las 3 direcciones
+con la misma frecuencia $\omega$ y de manera independiente), solo que
+ahora trataremos a cada oscilador como un oscilador armónico
+cuántico, cuya energía viene dada por:
+
+$$
+E_{n_x, n_y, n_z} = \left[
+                    \left( n_x + \frac{1}{2} \right) +
+                    \left( n_y + \frac{1}{2} \right) +
+                    \left( n_z + \frac{1}{2} \right)
+                    \right]
+                    \hbar \omega,
+\quad
+n_x, n_y, n_z = 1, 2, 3, \dots
+$$
+
+
+\begin{enumerate}[label=(\alph*),
+                  leftmargin=2\parindent,
+                  rightmargin=2\parindent]
+
+    \item{Calcular la función de partición del sólido.
+          Obtener luego una expresión del valor medio de la energía y a
+          partir de ella determinar su calor específico ($C_V$).}
+
+    \item{Realizar una gráfica del calor específico del sólido en
+          función de T.
+          Verificar que se cumple la ley de Dulong y Petit para altas
+          temperaturas ($C_V \simeq 3Nk_B$).}
+
+    \item{Definamos la temperatura de Einstein como
+          $T_E = \hbar \omega / k_B $, la cual es característica de
+          cada material.
+          Por ejemplo, el aluminio presenta una $T_E \sim 240 K$, el cual
+          cumple la Ley de Dulong y Petit a temperatura ambiente.
+          Sin embargo, existen excepciones a dicha ley, tal como el
+          caso del diamante, el cual presenta una $T_E \sim 1320 K$.
+          ¿Cómo podríamos aproximar el calor específico del diamante
+          a temperatura ambiente?
+          ¿Cómo se puede interpretar esta diferencia entre ambos
+          materiales en función del modelo microscópico aplicado?
+          }
+
+    \item{Comparar el calor específico obtenido en el punto anterior con el del
+          Problema~\ref{sec:oscilador-clasico}.
+          Demostrar que el $C_V$ calculado satisface el Tercer Principio.
+          ¿Cómo podemos interpretar este resultado?}
+
+    \item{La energía total del sólido puede expresarse como:
+          $$ E = \sum_{i=1}^{3N} \left( n_i + \frac{1}{2} \right) \hbar \omega, $$
+          donde los $n_i$ son los niveles de ocupación de los
+          osciladores unidimensionales, es decir, el nivel energético
+          que ocupa cada oscilador.
+          Si calculamos el valor medio de la energía del sólido, la
+          expresión anterior puede reescribirse como:
+          $$ \langle E \rangle =
+          \sum_{i=1}^{3N}
+          \left( \langle n_i \rangle + \frac{1}{2} \right) \hbar \omega, $$
+          y dado que los osciladores son independientes, el valor medio
+          del nivel de ocupación será el mismo para todos:
+          $\langle n \rangle$.
+          Por lo tanto, podemos escribir el valor medio de la energía
+          del sólido de la siguiente manera:
+          $$ \langle E \rangle =
+          3N \left( \langle n \rangle + \frac{1}{2} \right) \hbar \omega. $$
+          Demostrar que el valor medio del nivel de ocupación puede
+          expresarse como:
+          $$ \langle n \rangle = \frac{1}{e^{\hbar \omega / kT} - 1}. $$
+          Obtener los valores medios del nivel de ocupación en caso de
+          que $ T = T_E/2$, $T= T_E$ y $T= 3T_E$.}
+
+\end{enumerate}
+
 
 \end{document}
 

@@ -1,19 +1,38 @@
+sudo: require
+
+language: bash
+
+notifications:
+    email: false
+
+# Install dependencies (latex)
 before_install:
-- "sudo apt-get update && sudo apt-get install --no-install-recommends latexmk texlive-latex-base texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-lang-spanish dvipng"
+    - sudo apt-get -q update
+    #- sudo apt-get install -y latexmk texlive-full dvipng
+    - sudo apt-get install -y --no-install-recommends latexmk texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-lang-spanish dvipng
+
+env:
+    global:
+        # Encrypted GitHub Token (as GH_TOKEN variable)
+        secure: "Wr3Sw0czBD3gM9LRU3xPJAhMdQ9kdZRzHVLdX/TW8ahICmV5UrWy6MuxpxLXSrQFnhd6Tz7OfRZXgLgWKJgVjQeEqLWh+lvXpVmJcBz97HJFvvySNznIfeg1QUdIXmiKft/YxUFnxa/DHK/9L3sjZc0VhfhzNReTHNILWfOD5cKDl3QPe1yrqSvGaKzQX9o+ZignjyyBKQXa62BnF0miWatUFN0yZdonCHhg4Q/ghizH1xhYvxmsryE9kRQZsNG7f4NWcQ5X9H/L6GQfuD+jOjYdu/0nsKJBfinnIBVneCyPiUjZAf+1AGuHBJJ57sriM4vM5ynRgoD6q1BurkL9xOwKvYVaDtJOODSEUpT0nBbiV7L6MikppfQhNnjKn08gc0bx7PAZXVP/IZ/6+CTVY8/EXXjiqg0Kn6PD2wdXSch9uDXOugSD0FC0M06jhfhOodBdVyloDPXTPHaz3vaRfpw1hPB9YJ/u9F6Wv+V6B9Yn1vYa0CgOMQXzdq/+IITLtu5Vqk2vpr6G5bslUMSEYCdHHxq4jIkbq0IX3chQ7DCSLpUqQztB8/Yc4VbCyl/v6nxiyvlQW5EOxsMGkb7ifsb8SIBtNbaKtOgxhN/oxmiZouSF1SfEsKCYPclQaZsBOAvZplYwx2otoIi7+sXoKpUtwdyWrxGo9pYJpdmTsIg="
 
 script:
-- make
+    - make
 
 deploy:
-  provider: releases
-  api_key:
-    secure: ONPnX2cyvoii/8gq04799mQmJ0wBkCSoTqefwmXZEpw7g4KV5jjCsg7Fygl1khBtJsQqzfVcZK4lK++ecLpAg76Fc1/BXXC3IFcmT3vtaSjh3+42lu7cvd5ZpdVagfWnOb0onM0BRAYNxbhh5mRN6vFUp5gq+4dRnoZ7uFtYhFpBti04SFXpymLUWrKo/lsfm+Fh1GBZLP650m3OLoM/RRH9FT8c6UDiipTGolyCrrKpkKmDxSUtRztrTEhck6m2Ip9DMVJmRBJ6sl1nIrpkAzzJwduVw3w5vsradsvnwu3UO1Y05ix5iyqnZD5Lt7PQUUET5qdxIJ1F8K9TH0I8hhEEk5F54khPkRGS5Ufeq/7rFa6GIkrneh9ncjIBrMzDH6j0G3a2OuvQITtXS6XWZr6J5iod+M23oIKTaj8YwrfDgjlYJjswJQ1Pm2W9eJU2HrAsMSsu0HVlroxDL+KyoesGbgJ11jkZ97bdIs1u9EwkY/5NUFC4Rzec/KRFqhi2wpeeQWbaxLw84OJJZeg1wFlCueGBQ76Bu/I+neQUwR6q/1xL2R/ArAmMuSOZ7OVnnr/kbe/v1fSgQ+mN/iCDSMqUA/4xVeKY9n7c7CugymCV5BV4yWemtNwa49Z9Qgn7Ac9WkzLg0RyqnNY3kTL/w+7AqY8YC3rvNW64EztyMmE=
-  file:
-    - _build/practica1.pdf
-    - _build/practica2.pdf
-    - _build/practica3.pdf
-    - _build/practica4.pdf
-    - _build/repaso-termodinamica.pdf
-  skip_cleanup: true
-  on:
-    tags: true
+    # Deploy the PDFs into the builds branch
+    - provider: script
+      script: bash ci/pdf-deploy.sh
+      skip_cleanup: true
+      on:
+        branch: master
+    # Deploy a release
+    - provider: releases
+      api_key:
+        secure: chUh9dE+eIhLjBcVz4oDKvkxTIfqyaDD3iOrdMNCElIwVqbl5m+BvsDiuZ7fDw3kXRETb1QBYPdZc1QRucm8iEw8t2amCB29aPU7GaRSrJW8lCWRpWAcVNrKAfVWQ5i6xomnIIsq36k/6FpNoFKScaFoQt68Eq9zm/oD737Vd/H+EgPKMzpcbAWfJEZnfyheZtEKnPnDxebjNtZWy/4m5PjPoAPRsr2GNjZK45wll1IijO4kaAFgG9wEzALfBi3t8jBrCKCD4tpnkcL+75YcM3AFyL9HG6J5M0zklkySlQtCkq9cmVQm3fTHPlt5G7HHT7P+nLZfIK63GPIZJu47uWx5rwxqeRpQVfoIXKP2MPfIlvl5lxOBS2pzi841Cjv5lkiGPEFBi4w359ug/OZhhww6CDM8yWW2IEP00Gns4iaDhqtLf3N43Q+zSths+ECjabMPiSe1qlAsABccizPRLpaLPYc51Kv/Zv+KcT2zvl+Ld0Vn0atGEtg5YErUWuRTBjibciY/JHyMnWJ0lWqU1nBjHgEA2o8u1IdyZ3AJU4hZhMCaNBMxfe32IFynvatfuvZVxpWaVsKBdWJ/qdhn7Yvj2DISNbHNoOHG/fpiFUrnhPG2oHLj03TDYTkrfnGIKEzvNnW5mZbY5wzeGUj1gi1HOJna6iHNqLlbKJqXsdc=
+      skip_cleanup: true
+      file_glob: true
+      file: _output/*
+      on:
+        tags: true
+        branch: master
