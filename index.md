@@ -1,8 +1,8 @@
 ---
-title: Urubu Quickstart
+title: Mecánica Estadística
 layout: home
 content:
-    - start
+    - practicas
 tagline:
-    Set up your new Urubu project quickly
+    Repositorio de la cátedra, FCEFyN, UNSJ
 ---
