@@ -31,7 +31,7 @@
     <![endif]-->
     {% include 'analytics.html' %}
     {% block head_addon %}
-    {% endblock %} 
+    {% endblock %}
   </head>
 
   <body>
@@ -81,11 +81,12 @@
             {% endfor %}
           </ul>
 
-          <form class="navbar-form navbar-left" action="/search.html" role="search">
-            <div class="form-group">
-              <input type="text" required name="q" id="tipue_search_input" class="form-control" placeholder="Search"> 
-            </div>
-          </form>
+          <!--Search form-->
+          <!--<form class="navbar-form navbar-left" action="/search.html" role="search">-->
+            <!--<div class="form-group">-->
+              <!--<input type="text" required name="q" id="tipue_search_input" class="form-control" placeholder="Search">-->
+            <!--</div>-->
+          <!--</form>-->
 
           <ul class="nav navbar-nav navbar-right">
             {% for item in site.reflinks['/'].content[navbar_right_index:] %}
@@ -121,7 +122,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/{{bootstrap}}/js/bootstrap.min.js"></script>
     {% block body_addon %}
-    {% endblock %} 
+    {% endblock %}
 
   </body>
 </html>
