@@ -8,6 +8,8 @@ navbar_right_items: 0
 # Fill out your Google Analytics ID here
 google_analytics: UA-48968311-4
 
+# Custom variables
+thumbnails: assets/thumbnails
 
 reflinks:
     urubu:

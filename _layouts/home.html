@@ -19,35 +19,25 @@
 
 <div class="container">
 
-{{ this.body }}
+  {{ this.body }}
+
 
   <div class="row card-index">
-    <div class="col-md-4">
-      <div class="thumbnail card">
-        <a href="http://www.google.com/">
-        <img class="img-responsive" src="/assets/practicas.png">
-        <div class="caption">
-          <h3>Prácticas</h3>
+
+    {% for subpage in this.content %}
+
+      <div class="col-md-4">
+        <div class="thumbnail card">
+          <a href={{ subpage.url }}>
+            <img class="img-responsive" src="/{{ site.thumbnails }}/{{ subpage.thumbnail }}">
+          <div class="caption">
+            <h3>{{ subpage.title }}</h3>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail card">
-        <a href="http://www.google.com/">
-        <img class="img-responsive" src="/assets/bibliografia.png">
-        <div class="caption">
-          <h3>Bibliografía</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail card">
-        <a href="http://www.google.com/">
-        <img class="img-responsive" src="/assets/herramientas.png">
-        <div class="caption">
-          <h3>Herramientas</h3>
-        </div>
-      </div>
+
+    {% endfor %}
+
   </div>
 
 </div>

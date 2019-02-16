@@ -2,6 +2,7 @@
 title: Bibliografía
 layout: page
 pager: false
+thumbnail: bibliografia.jpg
 ---
 
 A continuación listamos la bibliografía sugerida para cubrir los contenidos propios de

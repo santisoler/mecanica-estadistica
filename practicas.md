@@ -2,6 +2,7 @@
 title: Prácticas
 layout: page
 pager: false
+thumbnail: practicas.jpg
 ---
 
 Aquí podrás encontrar las prácticas de la materia.
