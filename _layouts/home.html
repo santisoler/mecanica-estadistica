@@ -1,4 +1,5 @@
 {% extends "_base.html" %}
+{% from "utils.html" import card %}
 
 {% block home %}
 {% endblock %}
@@ -21,23 +22,13 @@
 
   {{ this.body }}
 
-
+  <!--Add 3 cards in a row-->
   <div class="row card-index">
-
     {% for subpage in this.content %}
-
       <div class="col-md-4">
-        <div class="thumbnail card">
-          <a href={{ subpage.url }}>
-            <img class="img-responsive" src="/{{ site.thumbnails }}/{{ subpage.thumbnail }}">
-          <div class="caption">
-            <h3>{{ subpage.title }}</h3>
-          </div>
-        </div>
+        {{ card(subpage, site) }}
       </div>
-
     {% endfor %}
-
   </div>
 
 </div>
