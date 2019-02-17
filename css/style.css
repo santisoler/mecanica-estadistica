@@ -1,9 +1,8 @@
 .card {
-    border: none;
-    padding: 0px 50px 0px 50px;
+    margin: 20px 50px 20px 50px;
+    border: None
 }
 
 .card-index {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 80px 20px 80px
 }

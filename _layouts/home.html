@@ -18,14 +18,14 @@
 </div>
 
 
-<div class="container">
+<div class="container card-index">
 
   {{ this.body }}
 
   <!--Add 3 cards in a row-->
-  <div class="row card-index">
+  <div class="row">
     {% for subpage in this.content %}
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-4">
         {{ card(subpage, site) }}
       </div>
     {% endfor %}
