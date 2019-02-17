@@ -1,5 +1,7 @@
 brand: Mecánica Estadística
 
+url: http://santisoler.github.io/mecanica-estadistica
+
 bootswatch: flatly # flatly, yeti, lumen,...
 navbar_inverse: false
 bootstrap: 3.3.6
@@ -10,6 +12,7 @@ google_analytics: UA-48968311-4
 
 # Custom variables
 thumbnails: assets/thumbnails
+license: Creative Commons Attribution-ShareAlike 4.0 International License
 
 reflinks:
     urubu:
@@ -21,3 +24,9 @@ reflinks:
     bootswatch:
         url: http://bootswatch.com
         title: Bootswatch
+    website_repo:
+        title: mecanica-estadistica/website
+        url: https://www.github.com/santisoler/mecanica-estadistica/tree/website
+    license:
+        title: CC-BY-SA
+        url: http://creativecommons.org/licenses/by-sa/4.0/
