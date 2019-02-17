@@ -1,6 +1,5 @@
 body {
   position: relative;
-  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -74,7 +73,7 @@ code {
 
 /* heading scrolling */
 
-h2[id]:before, 
+h2[id]:before,
 h3[id]:before{
   content: "";
   display: block;
@@ -92,7 +91,7 @@ h3[id]:before{
   .sidebar.affix,
   .sidebar.affix-bottom {
     width: 213px;
-  } 
+  }
   .sidebar.affix {
     position: fixed; /* Undo the static from mobile first approach */
     top: 80px;
