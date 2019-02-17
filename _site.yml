@@ -15,20 +15,26 @@ license: Creative Commons Attribution-ShareAlike 4.0 International License
 
 reflinks:
     urubu:
-        url: http://urubu.jandecaluwe.com
         title: Urubu
+        url: http://urubu.jandecaluwe.com
     bootstrap:
-        url: http://getbootstrap.com
         title: Bootstrap
+        url: http://getbootstrap.com
     bootswatch:
-        url: http://bootswatch.com
         title: Bootswatch
+        url: http://bootswatch.com
     website_repo:
         title: mecanica-estadistica/website
         url: https://www.github.com/santisoler/mecanica-estadistica/tree/website
     license:
         title: CC-BY-SA
         url: http://creativecommons.org/licenses/by-sa/4.0/
+    fcefn:
+        title: Facultad de Ciencas Exactas, Físicas y Naturales
+        url: https://exactas.unsj.edu.ar
+    unsj:
+        title: Universidad Nacional de San Juan
+        url: http://www.unsj.edu.ar
 
 
 menuicons: [
