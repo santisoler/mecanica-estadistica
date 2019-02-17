@@ -5,7 +5,6 @@ url: http://santisoler.github.io/mecanica-estadistica
 bootswatch: flatly # flatly, yeti, lumen,...
 navbar_inverse: false
 bootstrap: 3.3.6
-navbar_right_items: 0
 
 # Fill out your Google Analytics ID here
 google_analytics: UA-48968311-4
@@ -30,3 +29,10 @@ reflinks:
     license:
         title: CC-BY-SA
         url: http://creativecommons.org/licenses/by-sa/4.0/
+
+
+menuicons: [
+    ["https://www.github.com/santisoler/mecanica-estadistica",
+        "fab fa-github fa-lg",
+        "Repo at Github"],
+    ]
