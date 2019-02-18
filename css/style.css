@@ -116,5 +116,37 @@ h3[id]:before{
 }
 
 .jumbotron {
-    margin: -20px 0px 0px 0px
+    margin: -22px 0px 0px 0px;
 }
+
+.jumbotron-background {
+    background-image: url("../assets/banner.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.quiet-white {
+    color: white;
+    text-decoration: none;
+}
+
+.quiet-white:link {
+    color: white;
+    text-decoration: none;
+}
+
+.quiet-white:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.quiet-white:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.quiet-white:active {
+    color: white;
+    text-decoration: none;
+}
+
