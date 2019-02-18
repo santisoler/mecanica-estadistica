@@ -1,7 +1,7 @@
 {%- macro card(subpage, site) -%}
   <div class="thumbnail card">
     <a href={{ subpage.url }}>
-      <img class="img-responsive" src="/{{ site.thumbnails }}/{{ subpage.thumbnail }}">
+        <img class="img-responsive" src="/{{ site.baseurl }}/{{ site.thumbnails }}/{{ subpage.thumbnail }}">
       <div class="caption">
         <h3>{{ subpage.title }}</h3>
       </div>
