@@ -20,9 +20,9 @@ licencia [Creative Commons Attribution-ShareAlike 4.0 International License][cc-
 [![CreativeCommons][cc-by-sa-image]][cc-by-sa]
 
 <!--Urls-->
-[travis-ci]: https://travis-ci.org/santisoler/mecanica-estadistica/builds?label=master&style=for-the-badge
-[travis-master-shield]: https://img.shields.io/travis/santisoler/mecanica-estadistica/master.svg
+[travis-ci]: https://travis-ci.org/santisoler/mecanica-estadistica/builds
+[travis-master-shield]: https://img.shields.io/travis/santisoler/mecanica-estadistica/master.svg?label=master&style=for-the-badge
 [travis-website-shield]: https://img.shields.io/travis/santisoler/mecanica-estadistica/website.svg?label=website&style=for-the-badge
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg?label=master&style=for-the-badge
