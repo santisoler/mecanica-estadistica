@@ -1,5 +1,7 @@
 brand: Mecánica Estadística
 
+baseurl: mecanica-estadistica
+
 url: http://santisoler.github.io/mecanica-estadistica
 
 ignore_patterns: ["README.md", "environment.yml", "LICENSE.md", "ci"]
