@@ -9,9 +9,9 @@ A continuación listamos la bibliografía sugerida para cubrir los contenidos pr
 la cátedra así como temas adicionales que pueden ser de utilidad.
 
 
-# Mecánica Estadística:
+# Mecánica Estadística
 
-## Principales:
+## Principales
 
 - J. Ortín y J. M. Sancho. **Curso de Física Estadística**.  Ed. Universidad de Barcelona.
 - B. Cowan. **Topics in Statistical Mechanics**.  Imperial College Press, 2005.
@@ -20,7 +20,7 @@ la cátedra así como temas adicionales que pueden ser de utilidad.
 - W. Krauth. **Statistical Mechanics: Algorithms and Computations**.  Oxford University Press. 2006.
 - F. Reif. **Fundamentos de Física Estadística y Térmica**. McGraw-Hill.
 
-## Adicionales:
+## Adicionales
 
 - G. Zgrablich. **Elementos de Mecánica Estadística**.  Ed. UAM, México. 2009.
 - L. Landau y E. Lifshitz. **Física Estadística**. Reverté.
@@ -31,7 +31,7 @@ la cátedra así como temas adicionales que pueden ser de utilidad.
 - V.P. Zhdanov. **Elementary Physicochemical Processes on Solid Surface**.  Plenum Press, 1991.
 
 
-# Otras áreas complementarias:
+# Otras áreas complementarias
 
 - R.P. Grimaldi. **Matemáticas Discreta y Combinatoria: Una Introducción con aplicaciones**. Tercera Edición. Adison-Wesley Iberoamericana. 1997.
 - Zemansky and Dittman. **Heat and Thermodynamics**. Seventh Edition. McGraw-Hill. 1997
