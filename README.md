@@ -1,4 +1,4 @@
-# Mecánica Estadística 2019
+# Elementos de Mecánica Estadística
 
 [![Travis CI master][travis-master-shield]][travis-ci]
 [![Travis CI website][travis-website-shield]][travis-ci]
