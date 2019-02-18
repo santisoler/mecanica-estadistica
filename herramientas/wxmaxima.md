@@ -1,8 +1,7 @@
 ---
-title: Herramientas
+title: wxMaxima
 layout: page
 pager: false
-thumbnail: herramientas.jpg
 ---
 
 # wxMaxima
