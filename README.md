@@ -8,7 +8,7 @@ En este repositorio podrás encontrar prácticas, apuntes y materiales de la
 cátedra.
 
 Por favor, visita la página web de la cátedra para mayor información:
-[https://santisoler.github.io/mecanica-estadistica]().
+https://santisoler.github.io/mecanica-estadistica.
 
 
 ## Licencia
