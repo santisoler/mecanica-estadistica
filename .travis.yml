@@ -1,0 +1,40 @@
+language: generic
+
+sudo: false
+
+notifications:
+  email: false
+
+# Only build pushes from the master branch. PRs are always built.
+branches:
+  only:
+    - website
+
+env:
+  global:
+    # Github Token (GH_TOKEN)
+    - secure: "TVzA12tnVVjgavg6We/ipwRDJ/Knt2T5YmO0rpCmKFhuUtRduqV3PAFMGsd4bEMhc/EE89dfFUIYwyFzGrJHUMQ6BmXrSoMdoic7VaFZEWBOV7wMq17mqTWS/RBQdAy4quhGDcwnrPUwIEvXXbT0yP8e+CjQrRBsVIF6INDWxvDKx9YWvyHzGdMY7jlBj0LunmjvgNYX4+7ffws3JIcQwCcZhfCMRMhKzofaIWjxd8rTbjGR07mJRjpQFLABC5xUnnagXSOF24FV5NyccP6enGPvopO8P6sEOkJ0Zh4mGf49lY48LZcli7O3R0Fw8gXS3ygjz1eu5PD/IFbobZgLCF7HY2CNZOp33eeqTp6Oa0b3DFT/LQMB95lrn9toeKynRDO9hwjKW3rL4j+4DO8KDHLAuyUKLltyEm2sJZTjUCJ15xhCRQkYlLuxJKt5IfsPVU/J4jbtaWfASFIvUZP42u4bSpZLofgMU/v9edjwsQ02/2B7lKLLOE5vDeJrrY/DClm80vGTpOIQ+jreTVeCEkNPoXTfJahwyOvRFSBvWtmB2nujkoiFVtDlDCnmicY+KLVxzYU9f1dh0IWh/Qpg6DLrTno/UQNHsdViXO2k4s3aza9MNIofCNvUZxUVsbF8IOJozPBYxY84OEcgIw1+rQGHfgkhgvuP6qxLreFoTAs="
+
+before_install:
+  # Get Miniconda from Continuum
+  # Need to source the script to set the PATH variable in this environment
+  # (not the scripts environment)
+  - source ci/install-miniconda.sh
+
+install:
+  # Update conda itself
+  - conda update --yes conda
+  # Create a conda env based on environment.yml
+  - conda env create
+  - source activate urubu
+
+script:
+  - make
+
+deploy:
+  # Push the built HMTL to Github pages
+  - provider: script
+    script: ci/deploy-gh-pages.sh
+    skip_cleanup: true
+    on:
+      branch: website
