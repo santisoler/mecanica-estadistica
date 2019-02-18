@@ -12,9 +12,9 @@ else
     MINICONDA_FILE=Miniconda3-latest-Linux-x86_64.sh
     CONDA_PREFIX=/home/travis/miniconda3
 fi
-wget $MINICONDA_URL/$MINICONDA_FILE -O miniconda.sh
-chmod +x miniconda.sh
-./miniconda.sh -b
+wget $MINICONDA_URL/$MINICONDA_FILE -O $HOME/miniconda.sh
+chmod +x $HOME/miniconda.sh
+$HOME/miniconda.sh -b
 
 export PATH=$CONDA_PREFIX/bin:$PATH
 
