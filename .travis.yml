@@ -31,8 +31,8 @@ script:
 
 deploy:
   # Push the built HMTL to Github pages
-  - provider: bash script
-    script: ci/deploy-gh-pages.sh
+  - provider: script
+    script: bash ci/deploy-gh-pages.sh
     skip_cleanup: true
     on:
       branch: website
