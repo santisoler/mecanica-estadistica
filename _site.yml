@@ -11,7 +11,7 @@ navbar_inverse: false
 bootstrap: 3.3.6
 
 # Fill out your Google Analytics ID here
-google_analytics: UA-48968311-4
+google_analytics: UA-134700790-1
 
 # Custom variables
 thumbnails: assets/thumbnails
