@@ -1,6 +1,6 @@
 ---
 title: Herramientas
-layout: page
+layout: menu_page
 pager: false
 thumbnail: herramientas.jpg
 content:

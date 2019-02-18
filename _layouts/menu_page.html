@@ -1,0 +1,37 @@
+{% extends "_base.html" %}
+
+{% block body %}
+
+<div class="container">
+
+  {% block breadcrumbs %}
+  {% if this.breadcrumbs %}
+  <ol class="breadcrumb">
+    <li><a href="{{url_prefix + '/'}}">Home</a></li>
+      {% for bc in this.breadcrumbs[:-1] %}
+      <li><a href="{{bc.url}}">{{bc.title}}</a></li>
+      {% endfor %}
+      <li class="active">{{this.breadcrumbs[-1].title}}</li>
+  </ol>
+  {% endif %}
+  {% endblock %}
+
+  <div class="page-header">
+    {% block title %}
+    <h1>{{this.title}}</h1>
+    {% endblock %}
+  </div>
+
+{% block content %}
+  <ul>
+    {% for element in this.content %}
+      <a href="{{ element.url }}">
+        <li><h3>{{ element.title }}</h3></li>
+      </a>
+     {% endfor %}
+  </ul>
+{% endblock %}
+
+</div>
+
+{% endblock %}
