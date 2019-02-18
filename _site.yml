@@ -1,5 +1,9 @@
 brand: Mecánica Estadística
 
+author:
+    name: Santiago Soler
+    url: https://santisoler.github.io
+
 baseurl: mecanica-estadistica
 
 url: http://santisoler.github.io/mecanica-estadistica
