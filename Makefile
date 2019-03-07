@@ -15,6 +15,6 @@ build: $(OUTPUT)
 clean:
 	rm -r $(OUTPUT)
 
-$(OUTPUT_DIR):
+$(OUTPUT):
 	mkdir $(OUTPUT)
 
