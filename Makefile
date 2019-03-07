@@ -1,21 +1,20 @@
-# List directories that have tex files inside
-TARGETS = $(subst /,,$(subst ./,,$(dir $(shell find . -maxdepth 2 -name '*.tex'))))
+# Search for .tex files to be compiled
+TARGETS = $(shell find . -name '*.tex')
 # Name of the directory that will be created and will store the final PDFs
 OUTPUT = _output
 # Name of the subdirectories inside TARGETS that store each PDF file
 TARGETS_OUTPUT = _output
-# List all final PDFs files
-PDFS = $(addprefix $(OUTPUT)/, $(addsuffix .pdf, $(TARGETS)))
 
-all: $(PDFS)
 
-$(OUTPUT)/%.pdf: % | $(OUTPUT)/
-	make -C $<
-	mv $</$(TARGETS_OUTPUT)/$<.pdf $(OUTPUT)
+all: build
 
-$(OUTPUT)/:
-	mkdir $(OUTPUT)
+build: $(OUTPUT)
+	@ ( $(foreach TEX,$(TARGETS),make -C $(shell dirname $(TEX)) all;) )
+	@ ( $(foreach TEX,$(TARGETS),mv $(shell dirname $(TEX))/$(TARGETS_OUTPUT)/*.pdf $<;) )
 
 clean:
-	$(foreach target, $(TARGETS), make -C $(target) clean;)
 	rm -r $(OUTPUT)
+
+$(OUTPUT):
+	mkdir $(OUTPUT)
+
