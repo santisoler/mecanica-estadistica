@@ -1,21 +1,13 @@
-# List directories that have tex files inside
-TARGETS = $(subst /,,$(subst ./,,$(dir $(shell find . -maxdepth 2 -name '*.tex'))))
+TARGETS = $(shell find . -maxdepth 3 -name '*.tex')
+
 # Name of the directory that will be created and will store the final PDFs
-OUTPUT = _output
-# Name of the subdirectories inside TARGETS that store each PDF file
-TARGETS_OUTPUT = _output
-# List all final PDFs files
-PDFS = $(addprefix $(OUTPUT)/, $(addsuffix .pdf, $(TARGETS)))
+OUTPUT_DIR = _output
+LATEX_COMPILER = latexmk
+LATEX_FLAGS = -pdf -cd -halt-on-error -outdir=$(CURDIR)/$(OUTPUT_DIR)
 
-all: $(PDFS)
 
-$(OUTPUT)/%.pdf: % | $(OUTPUT)/
-	make -C $<
-	mv $</$(TARGETS_OUTPUT)/$<.pdf $(OUTPUT)
-
-$(OUTPUT)/:
-	mkdir $(OUTPUT)
+all:
+	$(LATEX_COMPILER) $(LATEX_FLAGS) $(TARGETS)
 
 clean:
-	$(foreach target, $(TARGETS), make -C $(target) clean;)
-	rm -r $(OUTPUT)
+	rm -r $(OUTPUT_DIR)
