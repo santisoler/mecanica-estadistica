@@ -32,7 +32,7 @@ reflinks:
         title: Bootswatch
         url: http://bootswatch.com
     website_repo:
-        title: mecanica-estadistica/website
+        title: santisoler/mecanica-estadistica
         url: https://www.github.com/santisoler/mecanica-estadistica/tree/website
     license:
         title: CC-BY-SA
