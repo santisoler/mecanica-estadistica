@@ -3,11 +3,6 @@ sudo: false
 notifications:
   email: false
 
-# Only build pushes from the master branch. PRs are always built.
-branches:
-  only:
-    - website
-
 env:
   global:
     # Github Token (GH_TOKEN)
