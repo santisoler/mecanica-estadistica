@@ -3,7 +3,7 @@ sudo: false
 notifications:
   email: false
 
-# Only build pushes from the master branch. PRs are always built.
+# Only build pushes from the website branch. PRs are always built.
 branches:
   only:
     - website
