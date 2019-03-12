@@ -5,6 +5,11 @@ language: bash
 notifications:
     email: false
 
+# Only build pushes from the master branch. PRs are always built.
+branches:
+  only:
+    - master
+
 # Install dependencies (latex)
 before_install:
     - sudo apt-get -q update
