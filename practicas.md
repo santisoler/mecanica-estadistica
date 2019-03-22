@@ -9,7 +9,7 @@ Aquí podrás encontrar las prácticas de la materia.
 Estarán disponibles para su descarga a medida que estén listas.
 
 - [Práctica 1: Repaso de Termodinámica y Análisis Combinatorio][practica1]
-- Práctica 2: Colectivo Microcanónico
+- [Práctica 2: Colectivo Microcanónico][practica2]
 - Práctica 3: Colectivo Canónico
 - Práctica 4: Colectivo Macrocanónico
 - Práctica 5: Gases Cuánticos
