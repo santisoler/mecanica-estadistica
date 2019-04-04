@@ -10,7 +10,7 @@ Estarán disponibles para su descarga a medida que estén listas.
 
 - [Práctica 1: Repaso de Termodinámica y Análisis Combinatorio][practica1]
 - [Práctica 2: Colectividad Microcanónica][practica2]
-- Práctica 3: Colectividad Canónica
+- [Práctica 3: Colectividad Canónica][practica3]
 - Práctica 4: Colectividad Macrocanónica
 - Práctica 5: Gases Cuánticos
 
