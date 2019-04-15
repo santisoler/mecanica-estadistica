@@ -164,23 +164,22 @@ $$ \Delta x \Delta p \gtrsim  h$$
 donde $\Delta x$ y $\Delta p$ son las incertidumbres en la medición de
 la posición y el momento de una particula, respectivamente; y $h$ es
 la constante de Planck.
-De esta manera, podríamos pensar que a la hora de integrar en las
-coordenadas del espacio de las fases es necesario dividir por el
-``mínimo volumen'' que puede ocupar cada microestado
-$\{ q_1, \dots q_N, p_1, \dots p_N \}$, es decir, $h^{3N}$.
+De esta manera, cada microestado
+$\{ q_1, \dots q_N, p_1, \dots p_N \}$
+ocupa un ``mínimo volumen'' igual a $h^{3N}$.
+
+Además, al calcular la función de partición del gas ideal en el problema
+\ref{sec:gas-ideal} no hemos considerado la indistinguibilidad de las partículas.
+Gibbs propuso dividir la función de partición por el factor $N!$ con el objeto de
+eliminar del conteo aquellos estados en los que únicamente se permutan partículas.
 
 \begin{enumerate}[label=(\alph*),
                   leftmargin=2\parindent,
                   rightmargin=2\parindent]
 
     \item{\label{item:de-broglie-particion}
-          Obtener la función de partición a partir de la siguiente
-          integral:
-          $$
-          Z(N, T, V) =
-            \frac{1}{h^{3N} N!}
-            \int_D e^{-\beta E(\{q, p\})} d^{3N}q \,\, d^{3N}p
-          $$
+          Obtener la función de partición del gas ideal aplicando la discretización del
+          espacio de las fases y el factor de Gibbs.
           }
 
     \item{Definimos a la longitud de onda térmica de de Broglie como:
