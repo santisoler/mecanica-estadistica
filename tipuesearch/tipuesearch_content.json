@@ -1,0 +1,40 @@
+{
+    "pages": [
+        {
+            "tags": "",
+            "text": "",
+            "title": "Mecánica Estadística",
+            "url": "/mecanica-estadistica/index.html"
+        },
+        {
+            "tags": "",
+            "text": "",
+            "title": "Search",
+            "url": "/mecanica-estadistica/search.html"
+        },
+        {
+            "tags": "",
+            "text": "A continuación listamos la bibliografía sugerida para cubrir los contenidos propios de\nla cátedra así como temas adicionales que pueden ser de utilidad. Mecánica Estadística Principales J. Ortín y J. M. Sancho. Curso de Física Estadística .  Ed. Universidad de Barcelona. B. Cowan. Topics in Statistical Mechanics .  Imperial College Press, 2005. R.K. Pathria. Statistical Mechanics . Second edition.  Butterworth Heinemann. 1997. D. Landau and K. Binder. A Guide to Monte Carlo Simulations in Statistical Physics .  Cambridge, 2015. W. Krauth. Statistical Mechanics: Algorithms and Computations .  Oxford University Press. 2006. F. Reif. Fundamentos de Física Estadística y Térmica . McGraw-Hill. Adicionales G. Zgrablich. Elementos de Mecánica Estadística .  Ed. UAM, México. 2009. L. Landau y E. Lifshitz. Física Estadística . Reverté. D. McQuarrie. Statistical Thermodynamics . University Science Books. T. Hill. An Introduction to Statistical Thermodynamics . Dover. G. Wannier. Statistical Physics . Dover. K. Binder. Monte Carlo Methods in Statistical Physics . Springer, 1979. V.P. Zhdanov. Elementary Physicochemical Processes on Solid Surface .  Plenum Press, 1991. Otras áreas complementarias R.P. Grimaldi. Matemáticas Discreta y Combinatoria: Una Introducción con aplicaciones . Tercera Edición. Adison-Wesley Iberoamericana. 1997. Zemansky and Dittman. Heat and Thermodynamics . Seventh Edition. McGraw-Hill. 1997 Cohen-Tannoudji, Diu and Laloe. Quantum Mechanics Apuntes y otros materiales N.P. Vásquez, Mecánica Estadística: una introducción , Universidad de Los Andes, Mérida, Venezuela, 2002",
+            "title": "Bibliografía",
+            "url": "/mecanica-estadistica/bibliografia.html"
+        },
+        {
+            "tags": "",
+            "text": "Aquí podrás encontrar las prácticas de la materia. Práctica 1: Repaso de Termodinámica y Análisis Combinatorio Práctica 2: Colectividad Microcanónica Práctica 3: Colectividad Canónica Práctica 4: Colectividad Macrocanónica Práctica 5: Gases Cuánticos",
+            "title": "Prácticas",
+            "url": "/mecanica-estadistica/practicas.html"
+        },
+        {
+            "tags": "",
+            "text": "",
+            "title": "Herramientas",
+            "url": "/mecanica-estadistica/herramientas/index.html"
+        },
+        {
+            "tags": "",
+            "text": "A lo largo de las prácticas será necesario realizar gráficas, resolver\nlímites, integrales y derivadas de manera analítica, etc.\nPara ello recomendamos utilizar el sistema de álgebra computacional Maxima , o bien una de las versiones del\nmismo con interfaz gráfica: wxMaxima .\nAmbos programas son Software Libre y pueden ser\nsencillamente instalados. Ubuntu y Debian Para instalar wxMaxima bajo Ubuntu, Debian y distribuciones derivadas de ellas\nprimero actualizaremos la lista de repositorios con: sudo apt-get update Y luego procedemos a instalar wxMaxima: sudo apt-get install wxmaxima ArchLinux, Manjaro o derivadas Para instalar wxMaxima bajo Manjaro, ArchLinux u otras distribuciones derivadas de la\núltima primero actualizamos la lista de repositorios con: sudo pacman -Sy Y luego instalamos wxMaxima (junto con gnuplot ): sudo pacman -S wxmaxima gnuplot Windows y otras distribuciones de GNU/Linux Aquí encontrarán links\nde descarga para la versión de Windows. Para otras distribuciones de GNU/Linux recomendamos buscar el paquete wxmaxima con su gestor de paquetes.",
+            "title": "wxMaxima",
+            "url": "/mecanica-estadistica/herramientas/wxmaxima.html"
+        }
+    ]
+}

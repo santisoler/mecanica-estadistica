@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-134700790-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <title>wxMaxima</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <link href="/mecanica-estadistica/css/style.css" rel="stylesheet" media="screen">
+    <link href="/mecanica-estadistica/css/syntax.css" rel="stylesheet" media="screen">
+
+    <!--Include font-awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!--Add favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.png">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/mecanica-estadistica/">Mecánica Estadística</a>
+    </div>
+    <div class="navbar-collapse collapse">
+
+      <ul class="nav navbar-nav navbar-left">
+        <!--Add link to each element in content.-->
+        <!--If this elements has its own content, then will be added as a dropdown menu.-->
+              <li><a href="/mecanica-estadistica/practicas.html">Prácticas</a></li>
+              <li><a href="/mecanica-estadistica/bibliografia.html">Bibliografía</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Herramientas <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/mecanica-estadistica/herramientas/wxmaxima.html">wxMaxima</a></li>
+                </ul>
+              </li>
+      </ul>
+
+      <!--Add menuicons on the right navbar-->
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="https://www.github.com/santisoler/mecanica-estadistica"> <i class="fab fa-github fa-lg" title="Repo at Github"></i>
+          </a>
+        </li>
+      </ul>
+
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="container">
+
+  <ol class="breadcrumb">
+    <li><a href="/mecanica-estadistica/">Home</a></li>
+      <li><a href="/mecanica-estadistica/herramientas/">Herramientas</a></li>
+      <li class="active">wxMaxima</li>
+  </ol>
+
+  <div class="page-header">
+    <h1>wxMaxima</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-7 content" role="main">
+    <main>
+      <p>A lo largo de las prácticas será necesario realizar gráficas, resolver
+límites, integrales y derivadas de manera analítica, etc.
+Para ello recomendamos utilizar el sistema de álgebra computacional
+<a href="http://maxima.sourceforge.net/">Maxima</a>, o bien una de las versiones del
+mismo con interfaz gráfica: <a href="https://andrejv.github.io/wxmaxima/">wxMaxima</a>.
+Ambos programas son
+<a href="https://es.wikipedia.org/wiki/Software_libre">Software Libre</a> y pueden ser
+sencillamente instalados.</p>
+<h2 id="ubuntu-y-debian">Ubuntu y Debian</h2>
+<p>Para instalar wxMaxima bajo Ubuntu, Debian y distribuciones derivadas de ellas
+primero actualizaremos la lista de repositorios con:</p>
+<div class="codehilite"><pre><span></span>sudo apt-get update
+</pre></div>
+
+
+<p>Y luego procedemos a instalar wxMaxima:</p>
+<div class="codehilite"><pre><span></span>sudo apt-get install wxmaxima
+</pre></div>
+
+
+<h2 id="archlinux-manjaro-o-derivadas">ArchLinux, Manjaro o derivadas</h2>
+<p>Para instalar wxMaxima bajo Manjaro, ArchLinux u otras distribuciones derivadas de la
+última primero actualizamos la lista de repositorios con:</p>
+<div class="codehilite"><pre><span></span>sudo pacman -Sy
+</pre></div>
+
+
+<p>Y luego instalamos wxMaxima (junto con <code>gnuplot</code>):</p>
+<div class="codehilite"><pre><span></span>sudo pacman -S wxmaxima gnuplot
+</pre></div>
+
+
+<h2 id="windows-y-otras-distribuciones-de-gnulinux">Windows y otras distribuciones de GNU/Linux</h2>
+<p><a href="https://wxmaxima-developers.github.io/wxmaxima/download.html">Aquí</a> encontrarán links
+de descarga para la versión de Windows.</p>
+<p>Para otras distribuciones de GNU/Linux recomendamos buscar el paquete
+<code>wxmaxima</code> con su gestor de paquetes.</p>
+    </main>
+    </div>
+
+    <div class="col-md-3" role="complementary">
+      <nav class="hidden-print hidden-xs hidden-sm">
+        <div class="sidebar" data-spy="affix" data-offset-top="80" data-offset-bottom="60">
+          <div class="well">
+            <a href="#"><strong>wxMaxima</strong></a>
+            <div class="toc">
+<ul>
+<li><a href="#ubuntu-y-debian">Ubuntu y Debian</a></li>
+<li><a href="#archlinux-manjaro-o-derivadas">ArchLinux, Manjaro o derivadas</a></li>
+<li><a href="#windows-y-otras-distribuciones-de-gnulinux">Windows y otras distribuciones de GNU/Linux</a></li>
+</ul>
+</div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="footer">
+
+  <p class="text-center text-muted">
+    Sitio alojado en <a href="https://pages.github.com/">Github Pages</a>.
+    <!--<br>-->
+    Desarrollado con <a href="http://urubu.jandecaluwe.com">Urubu</a> y
+    <a href="http://getbootstrap.com">Bootstrap</a> por
+    <a href="https://santisoler.github.io">Santiago Soler</a>.
+    El código fuente está disponible en
+    <a href="https://www.github.com/santisoler/mecanica-estadistica/tree/website">santisoler/mecanica-estadistica</a>.
+    <br>
+    Todo el contenido en este sitio se encuentra bajo la licencia
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>, excepto si se
+    encuentra explicitado.
+    <br>
+    Este sitio utiliza
+    <a href="https://analytics.google.com">Google Analytics</a>
+    para obtener estadísticas de las visitas.
+</p>
+
+
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
